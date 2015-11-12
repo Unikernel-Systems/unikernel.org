@@ -1,0 +1,24 @@
+{% if tags_list.first[0] == null %}
+    {% for tag in tags_list %} 
+        <li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}">{{ tag }}</a></li>
+    {% endfor %}
+{% else %}
+    {% capture get_items %}
+        {% for tag in tags_list %} 
+            {{ tag | first | replace: ' ', '_' }}
+        {% endfor %}
+    {% endcapture %}
+
+    {% capture num_words %}
+      {{ get_items | split:' ' |  sort | join:' ' | number_of_words }}
+    {% endcapture %}
+
+    {% for item in (1..num_words) %}{% capture a_tag %}{{ get_items | split:' ' |  sort | join:' ' | truncatewords:item | remove:'...' | split:' '  | last | replace: '_', ' ' }}{% endcapture %}
+    <li><a href="/tags/#{{ a_tag }}">{{ a_tag }}</a></li>
+
+    {% endfor %}
+{% endif %}
+
+{% assign tags_list = nil %}
+{% assign get_items = nil %}
+{% assign num_words = nil %}

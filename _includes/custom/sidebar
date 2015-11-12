@@ -1,0 +1,23 @@
+<aside class="large-3 columns">
+
+  <div class="panel">
+    <h5>Featured</h5>
+    <p><em>Exciting News Headline!</em> <br /> Yes, you read that correctly! There is Exciting News(TM) and this is where I put an excerpt!</p>
+    <a href="/blog/2015/unikernel-dockercon">Read More →</a>
+  </div>
+
+  {% unless page.tags == empty %}
+    <h5>Tags</h5>
+    {% if page.tags != nil %}
+      {% assign tags_list = page.tags | sort %}
+    {% else %}  
+      {% assign tags_list = site.tags %}
+    {% endif %}
+    <ul class="side-nav">
+      {% include custom/tags_list %}
+    </ul>
+  {% endunless %}
+
+</aside>
+
+

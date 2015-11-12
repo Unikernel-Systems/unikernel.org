@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}{% if page.title == site.title %} - {{ site.tagline }}{% else %} | {{ site.title }}{% endif %}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <!-- <meta name="author" content="{{ site.author.name }}"> -->
+
+    <!-- Style sheets for Zurb Foundation v5 -->
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/normalize.css">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/foundation.min.css">
+    <!-- Custom styles -->
+    <!-- <link rel="stylesheet" href="{{ ASSET_PATH }}/css/code.css">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/style.css"> -->
+
+    <link rel="shortcut icon" href="/icons/favicon.png" />
+    <link rel="icon" href="/icons/favicon.ico" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+
+    <!-- fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png">
+  -->
+
+    <!-- atom & rss feed -->
+    <!-- <link rel="alternate" type="application/atom+xml" href="http://feeds.feedburner.com/amirmc" title="amirchaudhry.com" /> -->
+    
+    <script src="{{ ASSET_PATH }}/js/vendor/custom.modernizr.js"></script>  
+  </head>
+
+  <body>
+    <!-- NAVIGATION -->
+    <div class="row">
+      <div class="large-3 columns">
+        <h1><img src="http://placehold.it/400x100&text=Logo"></h1>
+      </div>
+      <div class="large-9 columns">
+        <div class="nav-bar right">
+         <ul class="button-group">
+           <li><a href="{{BASE_PATH}}/" class="button">Home</a></li>
+           <li><a href="{{BASE_PATH}}/blog" class="button">Blog</a></li>
+           <li><a href="{{BASE_PATH}}/resources" class="button">Resources</a></li>
+           <li><a href="#" class="button">Contribute!</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {{ content }}
+
+    <!-- FOOTER -->
+    <footer class="row">
+      <div class="large-12 columns">
+        <hr/>
+        <div class="row">
+          <div class="large-6 columns">
+            <p><small>© Copyright All rights reserved by the author</small></p>
+          </div>
+          <div class="large-6 columns">
+            <ul class="inline-list right">
+              <li><a href="{{BASE_PATH}}/">Home</a></li>
+              <li><a href="{{BASE_PATH}}/blog">Blog</a></li>
+              <li><a href="{{BASE_PATH}}/resources">Resources</a></li>
+              <li><a href="#">Contribute!</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    {% include JB/analytics %}
+    
+    <!-- JavaScripts
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{ ASSET_PATH }}/js/vendor/jquery.js"></script>
+    <script src="{{ ASSET_PATH }}/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

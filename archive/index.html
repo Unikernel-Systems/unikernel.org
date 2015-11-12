@@ -1,0 +1,11 @@
+---
+layout: page
+title : Archive
+header : Archive
+---
+{% include JB/setup %}
+
+<div class="row-fluid post-full">
+    {% assign posts_collate = site.posts %}
+    {% include custom/posts_collate %}
+</div>

@@ -1,0 +1,38 @@
+---
+layout: default
+title : Unikernel Blog
+header: Blog
+---
+{% include JB/setup %}
+
+<div class="row">
+  <div class="large-12 columns">
+    <h1>Blog <small>This is my blog. It's awesome.</small></h1>
+    <hr/>
+  </div>
+</div>
+     
+<div class="row">
+  <div class="large-9 columns" role="content">
+    {% for post in site.posts %}
+    <article>
+      <h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
+      <h6>{{ post.date | date_to_long_string }} by <a href="#">{{ post.author }}</a></h6>
+      <div class="row">
+        <div class="large-6 columns">
+          {{ post.excerpt }}
+          <p><a href="{{ BASE_PATH }}{{ post.url }}">Read more →</a></p>
+        </div>
+        <div class="large-6 columns">
+          <img src="http://placehold.it/400x240&text=[img]"/>
+        </div>
+      </div>
+    </article>
+    <hr />
+    {% endfor %}
+    <h6><em><a href="{{BASE_PATH}}/archive">Post archive</a></em></h6>
+  </div>
+
+  <!-- SIDEBAR -->
+  {% include custom/sidebar %}
+</div>
