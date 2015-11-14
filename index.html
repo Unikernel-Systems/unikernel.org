@@ -7,7 +7,7 @@ tagline: "Rethinking Cloud Infrastructure"
 
 <div class="row">
   <div class="large-12 columns">
-    <img src="http://placehold.it/1000x400&text=[img]">
+    <img src="{{ BASE_PATH }}/images/banner-img.png">
     <hr>
   </div>
 </div>
@@ -17,28 +17,69 @@ tagline: "Rethinking Cloud Infrastructure"
     <img src="http://placehold.it/400x300&text=[img]">
   </div>
   <div class="large-8 columns">
-    <h4>What are Unikernels?</h4>
+    <h3>What are Unikernels?</h3>
     <div class="row">
       <div class="large-12 columns">
+        <p>Unikernels are specialised, single address space machine images constructed by using library operating systems.</p>
         <p>Unikernels greatly reduce the attack surface and resource footprint of cloud services. They are built by compiling high-level languages directly into specialised machine images that run directly on a hypervisor, such as Xen, or on bare metal. Since hypervisors power most public cloud computing infrastructure such as Amazon EC2, this lets your services run more cheaply, securely and with finer control than with a full software stack.</p>
+        <p>Unikernels provide many benefits compared to a traditional OS, including improved security, smaller footprints, better optimisation and fast boot times.</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <div class="row">
+      <div class="large-6 columns">
+        <div class="row">
+          <div class="large-6 columns">
+            <h4>Improved security</h4>
+            <p>By reducing the amount of code deployed, unikernels necessarily reduce the likely attack surface and therefore have improved security properties.</p>
+          </div>
+          <div class="large-6 columns">
+            <h4>Small footprints</h4>
+            <p>Unikernels have been shown to be around 4% the size of the equivalent code bases using a traditional OS.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-6 columns">
+            <h4>Highly optimised</h4>
+            <p>Due to the nature of their construction, it is possible to perform whole-system optimisation across device drivers and application logic, thus improving on the specialisation.</p>
+          </div>
+          <div class="large-6 columns">
+            <h4>Fast boot</h4>
+            <p>Unikernels have been regularly shown to boot extremely quickly, in time to respond to incoming requests, before the requests time-out.</p>
+          </div>
+        </div>
+      </div>
+      <div class="large-6 columns">
+        <div class="row">
+          <div class="large-12 columns">
+            <h4>What people are saying</h4>
+            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/unikernel/favorites" data-widget-id="603997052738113536">Favorite Tweets by @unikernel</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="row">
-  <div class="large-8 columns">
-    <h4>This is a content section</h4>
-    <div class="row">
-      <div class="large-6 columns">
-        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+<!--       <div class="large-3 columns">
+        <h4>Improved security</h4>
+        <p>By reducing the amount of code deployed, unikernels necessarily reduce the likely attack surface and therefore have improved security properties.</p>
       </div>
-     <div class="large-6 columns">
-        <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
+     <div class="large-3 columns">
+       <h4>Small footprints</h4>
+       <p>Unikernels have been shown to be around 4% the size of the equivalent code bases using a traditional OS.</p>
       </div>
-    </div>
-  </div>
-  <div class="large-4 columns">
-    <img src="http://placehold.it/400x300&text=[img]">
-  </div>
-</div>
+     <div class="large-3 columns">
+        <h4>Highly optimised</h4
+        <p>Due to the nature of their construction, it is possible to perform whole-system optimisation across device drivers and application logic, thus improving on the specialisation.</p>
+      </div>
+     <div class="large-3 columns">
+        <h4>Fast boot</h4>
+        <p>Unikernels have been regularly shown to boot extremely quickly, in time to respond to incoming requests, before the requests time-out.</p>
+      </div> -->
