@@ -10,7 +10,7 @@
 
     {{ content }}
     <hr>
-    <em>Published on {{ page.date | date_to_long_string }} by {{ page.author }}</em>
+    <em>Published on {{ page.date | date_to_long_string }} by <a href="{{page.author-url}}">{{ page.author }}</a></em>
 
   </div>
  
