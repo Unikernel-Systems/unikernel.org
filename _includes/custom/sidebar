@@ -3,7 +3,7 @@
   <div class="panel">
     <h5>Featured</h5>
     <p><em>Unikernels, meet Docker!</em> <br />Today, unikernels took to the stage at DockerCon EU in Barcelona!</p>
-    <a href="/blog/2015/unikernel-dockercon">Read More →</a>
+    <a href="/blog/2015/unikernels-meet-docker">Read More →</a>
   </div>
 
   {% unless page.tags == empty %}
