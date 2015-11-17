@@ -2,7 +2,7 @@
 
   <div class="panel">
     <h5>Featured</h5>
-    <p><em>Exciting News Headline!</em> <br /> Yes, you read that correctly! There is Exciting News(TM) and this is where I put an excerpt!</p>
+    <p><em>Unikernels, meet Docker!</em> <br />Today, unikernels took to the stage at DockerCon EU in Barcelona!</p>
     <a href="/blog/2015/unikernel-dockercon">Read More →</a>
   </div>
 
