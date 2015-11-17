@@ -17,14 +17,18 @@ header: Blog
     {% for post in site.posts %}
     <article>
       <h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
-      <h6>{{ post.date | date_to_long_string }} by <a href="#">{{ post.author }}</a></h6>
+      <h6><em>{{ post.date | date_to_long_string }} by <a href="{{ post.author-url }}">{{ post.author }}</a></em></h6>
       <div class="row">
         <div class="large-6 columns">
           {{ post.excerpt }}
           <p><a href="{{ BASE_PATH }}{{ post.url }}">Read more →</a></p>
         </div>
         <div class="large-6 columns">
-          <img src="http://placehold.it/400x240&text=[img]"/>
+          {% if post.image %}
+            <img src="{{post.image}}"/>
+          {% else %}
+            <img src="http://placehold.it/400x300&text=[img]"/>
+          {% endif %}
         </div>
       </div>
     </article>
