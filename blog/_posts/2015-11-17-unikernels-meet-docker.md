@@ -117,7 +117,7 @@ be more self-contained. When viewed this way, unikernels are just another step
 on this path and can be thought of as extreme, self-contained applications.
 The challenge is to make unikernels as easy to use as containers have become today.
 
-![Containers and unikernels on a continuum]({{BASE_PATH}}/images/intro-post/specialisation.jpg)
+![Containers and unikernels on a continuum]({{BASE_PATH}}/images/intro-post/specialisation.png)
 
 The obvious first step in addressing that challenge is to integrate unikernels
 with the existing container infrastructure, specifically the Docker tools and
