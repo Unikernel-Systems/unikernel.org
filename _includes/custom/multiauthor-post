@@ -1,0 +1,16 @@
+{% assign authorCount = post.authors | size %}
+{% if authorCount == 0 %}
+    No author
+{% elsif authorCount == 1 %}
+    {{ post.authors | first }}
+{% else %}
+    {% for author in post.authors %}
+        {% if forloop.first %}
+            {{ author }}
+        {% elsif forloop.last %}
+            and {{ author }}
+        {% else %}
+            , {{ author }}
+        {% endif %}
+    {% endfor %}
+{% endif %}
