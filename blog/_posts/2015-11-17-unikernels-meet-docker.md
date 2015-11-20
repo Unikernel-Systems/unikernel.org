@@ -177,10 +177,14 @@ of these new technologies. Look over the collection of unikernel projects and
 contribute your experiences to this blog!
 
 
-*Thanks to [Balraj][], [David][], [Jeremy][], [Mindy][] and [Thomas][] for their comments on earlier drafts.*
+*Thanks to [Anil][], [Balraj][], [David][], [Jeremy][], [Justin][],
+[Martin][], [Mindy][] and [Thomas][] for their comments on earlier drafts.*
 
 [Jeremy]: https://github.com/yallop
 [David]: https://github.com/dsheets
 [Mindy]: http://somerandomidiot.com
 [Thomas]: http://gazagnaire.org
 [Balraj]: https://github.com/balrajsingh
+[Anil]: http://anil.recoil.org
+[Justin]: https://github.com/justincormack
+[Martin]: https://lucina.net
