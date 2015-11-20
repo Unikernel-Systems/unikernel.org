@@ -1,8 +1,11 @@
 ---
 layout: post
 title: "Unikernels, meet Docker!"
-author: Amir Chaudhry
-author-url: 'http://amirchaudhry.com'
+authors: 
+- Amir Chaudhry
+- Richard Mortier
+author-urls: 
+- 'http://amirchaudhry.com'
 date: 2015-11-17 17:30:00
 tags: [unikernel, hack, dockercon, docker]
 image: /images/screencast.png

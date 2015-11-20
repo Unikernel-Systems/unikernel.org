@@ -17,7 +17,7 @@ header: Blog
     {% for post in site.posts %}
     <article>
       <h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
-      <h6><em>{{ post.date | date_to_long_string }} by <a href="{{ post.author-url }}">{{ post.author }}</a></em></h6>
+      <h6><em>{{ post.date | date_to_long_string }} by {% include custom/multiauthor-post %}</a></em></h6>
       <div class="row">
         <div class="large-6 columns">
           {{ post.excerpt }}
