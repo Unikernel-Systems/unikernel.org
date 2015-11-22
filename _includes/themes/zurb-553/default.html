@@ -28,9 +28,9 @@
   -->
 
     <!-- atom & rss feed -->
-    <!-- <link rel="alternate" type="application/atom+xml" href="http://feeds.feedburner.com/amirmc" title="amirchaudhry.com" /> -->
-    
-    <script src="{{ ASSET_PATH }}/js/vendor/custom.modernizr.js"></script>  
+    <link rel="alternate" type="application/atom+xml" href="{{BASE_PATH}}/atom.xml" title="{{ site.title }} - {{ site.tagline }}" />
+
+    <script src="{{ ASSET_PATH }}/js/vendor/custom.modernizr.js"></script>
   </head>
 
   <body>
@@ -82,7 +82,7 @@
     </footer>
 
     {% include JB/analytics %}
-    
+
     <!-- JavaScripts
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
