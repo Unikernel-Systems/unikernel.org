@@ -13,7 +13,9 @@ shorturl:
 ---
 {% include JB/setup %}
 
-![screenshot]({{BASE_PATH}}/images/contain-your-unikernels-crop.png)
+<p>
+<img alt="screenshot" src="http://unikernel.org/images/contain-your-unikernels-crop.png" style="box-shadow: 5px 5px 10px;">
+</p>
 
 After DockerCon EU in Barcelona several people asked me: “Is this for real?”.
 Yes it is, and today we are releasing the code for the entire “Unikernels, meet
