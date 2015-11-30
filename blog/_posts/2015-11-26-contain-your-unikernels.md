@@ -37,7 +37,7 @@ unikernel and Docker developer community on a production quality version of
 this demo. The goal is to make unikernel technology easily accessible to as
 many developers as possible!
 
-Personally, I would like to thank [Amir Chaudry][amir], [Justin
+Personally, I would like to thank [Amir Chaudhry][amir], [Justin
 Cormack][justin], [Anil Madhavapeddy][avsm], [Richard Mortier][mort], [Mindy
 Preston][mindy] and [Jeremy Yallop][yallop] for helping me put the demo
 together, [Docker][docker] for giving us the opportunity to demo at DockerCon,
