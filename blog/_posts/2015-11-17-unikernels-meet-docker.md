@@ -177,6 +177,9 @@ benefits of integration, as well as improving Docker itself to make the most
 of these new technologies. Look over the collection of unikernel projects and
 contribute your experiences to this blog!
 
+***Update (26 Nov)** — We've released the code so you can follow what we did.
+See the blog post at "[Contain Your Unikernels!][contain]" then check out the
+[code repository][code]!*
 
 *Thanks to [Anil][], [Balraj][], [David][], [Jeremy][], [Justin][],
 [Martin][], [Mindy][] and [Thomas][] for their comments on earlier drafts.*
@@ -189,3 +192,5 @@ contribute your experiences to this blog!
 [Anil]: http://anil.recoil.org
 [Justin]: https://github.com/justincormack
 [Martin]: https://lucina.net
+[contain]: http://unikernel.org/blog/2015/contain-your-unikernels/
+[code]: https://github.com/Unikernel-Systems/DockerConEU2015-demo/
