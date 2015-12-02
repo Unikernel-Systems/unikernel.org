@@ -33,3 +33,6 @@ Obviously, with C++ you can mess up the memory of your own program if you want t
 
 ## Thanks for the warm welcome!
 Opening up a repository after over a year, to much expectation from people you look up to, is pretty scary. There are so many things I'd like to improve, fix and add, but at some point you just have to let go and let it rip. The hope was that opening up would help the process - and indeed I got a pull request fixing all my typos the very next day. The inclusive response from [The Jedi Council](https://isocpp.org/), and the immediate welcome on twitter from the [Mirage](https://mirage.io/) guys have made us feel like family, more than competition, which is what we'd like to be. We hope to be able to contribute something back to the Unikernel effort as a whole.
+
+**PS:**
+If you're interested in playing around with IncludeOS, the best place to start is at the [README](https://github.com/hioa-cs/IncludeOS/blob/master/README.md), right on the front of our repository. You'll surely get it to work if you have a clean Ubuntu 14.04 VM in virtualbox, or an Ubuntu 14.04 server, but we have also been able to build on a mac. Once you've built an image, it should run anywhere with virtualbox or KVM!
