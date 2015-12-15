@@ -1,4 +1,6 @@
 # IncludeOS is now free and open source
+*Alfred Bratterud is Assistant Professor and PhD scholar at Oslo and Akershus University College of Applied Science where he is currently working full time leading the development of IncludeOS at the NetSys research group.*
+
 We've finally lifted the lid on [IncludeOS](http://www.includeos.org), just in time for the [IEEE CloudCom](http://2015.cloudcom.org/) paper presentation yesterday. A preprint of the paper is [available from our repo](https://github.com/hioa-cs/IncludeOS/blob/master/doc/papers/IncludeOS_IEEE_CloudCom2015_PREPRINT.pdf). However, we've done quite a lot of work since the paper was written, so here's an update on what IncludeOS is now, and what you can expect in the near future. 
 
 ## It's a bit like a JVM, but for x86 C++
