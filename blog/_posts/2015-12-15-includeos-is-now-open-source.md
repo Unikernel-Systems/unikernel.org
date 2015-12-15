@@ -142,6 +142,8 @@ it to work if you have a clean Ubuntu 14.04 VM in VirtualBox, or an Ubuntu
 14.04 server, but we have also been able to build on MacOS X directly. Once
 you've built an image, it should run anywhere with VirtualBox or KVM!
 
+*Thanks to [Amir][], [Anil][], [Jeremy][] and [Mort][] for their comments on earlier drafts.*
+
 [IncludeOS]: http://www.includeos.org
 [IEEE CloudCom]: http://2015.cloudcom.org/
 [paper]: https://github.com/hioa-cs/IncludeOS/blob/master/doc/papers/IncludeOS_IEEE_CloudCom2015_PREPRINT.pdf
@@ -152,3 +154,8 @@ you've built an image, it should run anywhere with VirtualBox or KVM!
 [ISO C++]: https://isocpp.org/
 [MirageOS]: https://mirage.io/
 [README]: https://github.com/hioa-cs/IncludeOS/blob/master/README.md
+
+[Amir]: https://twitter.com/amirmc
+[Anil]: http://anil.recoil.org
+[Jeremy]: https://github.com/yallop
+[Mort]: http://mort.io
