@@ -23,7 +23,7 @@ We've finally lifted the lid on [IncludeOS][], just in time for the
 since the paper was written, so here's an update on what IncludeOS is now, and
 what you can expect in the near future. 
 
-## It's a bit like a JVM, but for x86 C++
+### It's a bit like a JVM, but for x86 C++
 
 A Java Virtual Machine is a portable language runtime environment. Java is
 portable across hardware architectures and operating systems because it uses a
@@ -57,7 +57,7 @@ language runtimes, that would be great too. Before that can happen though,
 we'll have to get a stable API. We're currently on 0.7.0, meaning that
 anything can change at any time.
 
-## Networking from scratch
+### Networking from scratch
 
 One thing you'll notice is that our network stack is currently being written
 from scratch. Are we crazy? Possibly. We obviously considered - and wanted
@@ -73,7 +73,7 @@ as newlib (Standard C) and libc++ (Standard C++). Getting to read RFC's and
 implementing the TCP handshake from scratch has really been a blast - a highly
 recommended exercise.
 
-## C++ is a new language
+### C++ is a new language
 
 If you haven't looked at C++ after 2011, you should look now — "It feels like
 a new language" (Bjarne Stroustrup). While you can always argue that adding
@@ -97,7 +97,7 @@ depending on hardware, compared to the same binary running on Linux. A lot of
 this performance comes from greatly reduced complexity, but a lot also comes
 for free by just using C++.
 
-## We want to make Node++
+### We want to make Node++
 
 IncludeOS is pretty similar to Node.js in a few respects: It's single threaded
 at the moment, but highly efficient due to non-blocking I/O. This means that
@@ -119,7 +119,7 @@ In the [2016 Roadmap][] our explicit goal is to become "Node++": we want to
 enable people to develop tiny, self-contained, Node.js-style web services,
 with RESTful API's, in highly efficient C++.
 
-## Thanks for the warm welcome!
+### Thanks for the warm welcome!
 
 Opening up a repository after over a year, to much expectation from people you
 look up to, is pretty scary. There are so many things I'd like to improve, fix
@@ -134,7 +134,7 @@ as a whole.
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">The IncludeOS <a href="https://twitter.com/hashtag/unikernel?src=hash">#unikernel</a> is now free and <a href="https://twitter.com/hashtag/opensource?src=hash">#opensource</a>. Find our research prototype at <a href="https://t.co/1gnag1W2hA">https://t.co/1gnag1W2hA</a> <a href="https://twitter.com/hashtag/cloudcom?src=hash">#cloudcom</a> <a href="https://twitter.com/hashtag/includeos?src=hash">#includeos</a></p>&mdash; Alfred Bratterud (@AlfredBratterud) <a href="https://twitter.com/AlfredBratterud/status/671809686820143104">December 1, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## Try it out!
+### Try it out!
 
 If you're interested in playing around with IncludeOS, the best place to start
 is at the [README][], right on the front of our repository. You'll surely get
