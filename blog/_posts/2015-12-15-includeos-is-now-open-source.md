@@ -18,7 +18,7 @@ shorturl:
 *Alfred Bratterud is Assistant Professor and PhD scholar at Oslo and Akershus University College of Applied Science where he is currently working full time leading the development of IncludeOS at the NetSys research group.*
 
 We've finally lifted the lid on [IncludeOS][], just in time for the
-[IEEE CloudCom][] paper presentation yesterday. A preprint of the paper is
+[IEEE CloudCom][] paper presentation recently. A preprint of the paper is
 [available from our repo][paper]. However, we've done quite a lot of work
 since the paper was written, so here's an update on what IncludeOS is now, and
 what you can expect in the near future. 
@@ -60,8 +60,8 @@ anything can change at any time.
 ### Networking from scratch
 
 One thing you'll notice is that our network stack is currently being written
-from scratch. Are we crazy? Possibly. We obviously considered - and wanted
-to - port the stack from somewhere else, but not being intimately familiar
+from scratch. Are we crazy? Possibly. We obviously considered — and wanted
+to — port the stack from somewhere else, but not being intimately familiar
 with any existing kernel, I found that to be even harder than just doing it
 from scratch. I got a lot of help from reading the nicely annotated and
 cross-linked [SanOS source code][], and once the virtio network driver was
@@ -70,7 +70,7 @@ now. Clearly it will take time to make it complete, but the efforts it took to
 get from a driver, up to rudimentary TCP was really insignificant compared to
 the challenges we've faced when trying to integrate third-party libraries such
 as newlib (Standard C) and libc++ (Standard C++). Getting to read RFC's and
-implementing the TCP handshake from scratch has really been a blast - a highly
+implementing the TCP handshake from scratch has really been a blast — a highly
 recommended exercise.
 
 ### C++ is a new language
@@ -85,7 +85,7 @@ we're using in IncludeOS:
 2. C++11 implementation of delegates (i.e. pointers to a member function in a class instance), which are exactly as fast as function pointers. We're using these everywhere. Reading [the implementation][delegate-hpp] is a great way to have your brain explode, but they work like magic.
 3. User defined literals, and std::literals for units. You can set timers by passing in `100ms`, `10s` or `50min` as parameters to the same function. 
 4. Shared pointers. These behave much like normal C-style pointers, but will keep track of the number of instances of itself. Whenever a shared pointer exits the last scope, the destructor of the object pointed to gets called. We use this to have network packets release their buffers back to a buffer store, once they're no longer used by anyone.
-5. A lot of wisdom, packed into concise [guidelines][cpp-guide] from the Standard C++ foundation (A.k.a. ISO C++ / the Jedi Council).
+5. A lot of wisdom, packed into concise [guidelines][cpp-guide] from the Standard C++ foundation (a.k.a. ISO C++ / the Jedi Council).
 
 Obviously, with C++ you can mess up the memory of your own program if you want
 to, but compared to C you have so many more tools for writing encapsulated and
@@ -103,7 +103,7 @@ IncludeOS is pretty similar to Node.js in a few respects: It's single threaded
 at the moment, but highly efficient due to non-blocking I/O. This means that
 you'll have to use a callback-based programming style, just like with
 Javascript. The events you'll be subscribing to are all rooted in a physical
-interrupt - in fact, you can add callbacks to interrupts directly, if you want.
+interrupt — in fact, you can add callbacks to interrupts directly, if you want.
 An interesting thing to keep in mind is that I/O in modern hardware is
 non-blocking by default, with Direct Memory Access (DMA). A network packet
 arriving into IncludeOS will result in an interrupt, but only after the whole
@@ -124,9 +124,9 @@ with RESTful API's, in highly efficient C++.
 Opening up a repository after over a year, to much expectation from people you
 look up to, is pretty scary. There are so many things I'd like to improve, fix
 and add, but at some point you just have to let go and let it rip. The hope
-was that opening up would help the process - and indeed I got a pull request
+was that opening up would help the process — and indeed I got a pull request
 fixing all my typos the very next day. The inclusive response from
-[ISO C++][], and the immediate welcome on twitter from the [MirageOS][] guys
+[ISO C++][], and the immediate welcome on twitter from the [MirageOS][] team
 have made us feel like family, more than competition, which is what we'd like
 to be. We hope to be able to contribute something back to the Unikernel effort
 as a whole.
