@@ -142,6 +142,10 @@ it to work if you have a clean Ubuntu 14.04 VM in VirtualBox, or an Ubuntu
 14.04 server, but we have also been able to build on MacOS X directly. Once
 you've built an image, it should run anywhere with VirtualBox or KVM!
 
+*Edit: discuss this post on [devel.unikernel.org][discuss]*
+
+[discuss]: http://devel.unikernel.org/t/includeos-is-now-free-and-open-source/23/1
+
 *Thanks to [Amir][], [Anil][], [Jeremy][] and [Mort][] for their comments on earlier drafts.*
 
 [IncludeOS]: http://www.includeos.org

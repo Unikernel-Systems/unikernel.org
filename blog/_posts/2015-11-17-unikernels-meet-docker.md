@@ -181,6 +181,10 @@ contribute your experiences to this blog!
 See the blog post at "[Contain Your Unikernels!][contain]" then check out the
 [code repository][code]!*
 
+*Edit: discuss this post on [devel.unikernel.org][discuss]*
+
+[discuss]: http://devel.unikernel.org/t/unikernels-meet-docker/20/1
+
 *Thanks to [Anil][], [Balraj][], [David][], [Jeremy][], [Justin][],
 [Martin][], [Mindy][] and [Thomas][] for their comments on earlier drafts.*
 

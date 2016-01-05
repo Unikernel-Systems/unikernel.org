@@ -46,6 +46,10 @@ Source projects that made this demo possible.
 
 Now, go [try it out][github] and contain your unikernels!
 
+*Edit: discuss this post on [devel.unikernel.org][discuss]*
+
+[discuss]: http://devel.unikernel.org/t/contain-your-unikernels/21/1
+
 [docker]: http://docker.com/
 [rumprun]: http://wiki.rumpkernel.org/Repo:-rumprun
 [github]: https://github.com/Unikernel-Systems/DockerConEU2015-demo
