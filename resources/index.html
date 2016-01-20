@@ -7,7 +7,7 @@ tagline:
 
 <div class="row">
   <div class="large-12 columns">
-    <h1>Resources <small>Articles and videos about Unikernels.</small></h1>
+    <h1>Resources <small>Articles about Unikernels.</small></h1>
     <hr/>
   </div>
 </div>
@@ -39,6 +39,25 @@ tagline:
   <div class="large-6 columns">
     <h5>Unikernels: Library Operating Systems for the Cloud</h5>
     <p>This was the first outing in 2013 for unikernels as a compelling technique for building specialised infrastructure components such as DNS, HTTP or OpenFlow switches. It explains the single-address space memory layout for x86_64 Xen unikernels, how they work with the MirageOS OCaml code, and very competitive performance despite end-to-end type-safety down to the device drivers.</p>
+  </div>
+  <div class="large-3 columns">
+    <!-- <h6><em>Related</em></h6>
+    <ul>
+      <li>List</li>
+      <li>of</li>
+      <li>links</li>
+    </ul> -->
+  </div>  
+</div>
+
+<div class="row">
+  <hr>
+  <div class="large-3 columns">
+    <a href="{{BASE_PATH}}/files/2015-nsdi-jitsu.pdf"><img src="{{BASE_PATH}}/files/2015-nsdi-jitsu.png"></a>
+  </div>  
+  <div class="large-6 columns">
+    <h5>Jitsu: Just-In-Time Summoning of Unikernels</h5>
+    <p>This 2015 paper introduces the Xen/ARMv7 port of unikernels that run on commodity boards (e.g. the £39 Cubieboard2) and are thus suitable for building IoT clouds. It also shows off the fast boot capability of unikernels via the Jitsu Xen toolstack, which boots a VM in response to DNS lookups in real time. Unikernel VMs can often boot faster than a Linux container, due to their lack of reliance on disk access. It also illustrates the security advantages of unikernels vs a conventional Linux stack.</p>
   </div>
   <div class="large-3 columns">
     <!-- <h6><em>Related</em></h6>
@@ -129,10 +148,10 @@ tagline:
 <div class="row">
   <hr>
   <div class="large-3 columns">
-    <a href="{{BASE_PATH}}/files/2015-cmeleon-icfp-draft1.pdf"><img src="{{BASE_PATH}}/files/2015-cmeleon-icfp-draft1.png"></a>
+    <a href="{{BASE_PATH}}/files/2016-cmeleon-flops.pdf"><img src="{{BASE_PATH}}/files/2016-cmeleon-flops.png"></a>
   </div>  
   <div class="large-6 columns">
-    <h5>A Modular Foreign Function Interface (draft)</h5>
+    <h5>Declarative foreign function binding through generic programming</h5>
     <p>Unikernels run a single language runtime per VM address space, and so multiple languages form a distributed system. MirageOS (written in OCaml) supports a sophisticated foreign function interface that lets it interoperate with other language runtimes running inside other virtual machines. This lets us construct unikernel enclaves that run older applications written in C/C++/Node.js/etc, but handling all network traffic such as TCP/IP or TLS via the safe MirageOS unikernel.</p>
   </div>
   <div class="large-3 columns">
