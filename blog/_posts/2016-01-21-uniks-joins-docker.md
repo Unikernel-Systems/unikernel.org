@@ -32,6 +32,7 @@ Links:
 
 - [Unikernel Systems announcement][uniks2]
 - [Docker blog post][docker-pr]
+- [Docker Press Release][pr]
 
 *Discuss this on [devel.unikernel.org](https://devel.unikernel.org/t/unikernel-systems-joins-docker/71)*
 
@@ -39,3 +40,4 @@ Links:
 [uniks2]: http://unikernel.com#technology
 [docker-pr]: http://blog.docker.com/2016/01/unikernel/
 [unikernel.org]: http://unikernel.org
+[pr]: https://www.docker.com/press-release-01212016docker-acquires-unikernel-systems-extend-breadth-docker-platfrom
