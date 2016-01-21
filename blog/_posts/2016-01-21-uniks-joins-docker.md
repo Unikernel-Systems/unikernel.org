@@ -16,8 +16,8 @@ shorturl:
 <!-- ![Unikernel Systems webpage]({{BASE_PATH}}/images/logo-uniks.png) -->
 
 Today, [Unikernel Systems][uniks] announced that it is joining Docker. Please
-read the main notice posted at [unikernel.com][uniks] and the official Docker
-announcement at [TODO][docker-pr].
+read the main notice posted at [unikernel.com][uniks] and the Docker
+blog post at [http://blog.docker.com/2016/01/unikernel/][docker-pr].
 
 An important part of the work of Unikernel Systems is to support the growing
 unikernel movement, which includes contributing to a number of open source
@@ -31,9 +31,9 @@ which will accelerate the adoption of unikernels.
 Links:
 
 - [Unikernel Systems announcement][uniks2]
-- [Docker official news release][docker-pr]
+- [Docker blog post][docker-pr]
 
 [uniks]: http://unikernel.com
 [uniks2]: http://unikernel.com#technology
-[docker-pr]: #
+[docker-pr]: http://blog.docker.com/2016/01/unikernel/
 [unikernel.org]: http://unikernel.org
