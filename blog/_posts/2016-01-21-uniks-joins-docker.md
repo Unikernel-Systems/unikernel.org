@@ -33,6 +33,8 @@ Links:
 - [Unikernel Systems announcement][uniks2]
 - [Docker blog post][docker-pr]
 
+*Discuss this on [devel.unikernel.org](https://devel.unikernel.org/t/unikernel-systems-joins-docker/71)*
+
 [uniks]: http://unikernel.com
 [uniks2]: http://unikernel.com#technology
 [docker-pr]: http://blog.docker.com/2016/01/unikernel/
