@@ -1,13 +1,11 @@
-<aside class="large-3 columns">
-
-  <div class="panel">
+<!--  <div class="panel">
     <h5>Featured</h5>
     <p><em>Unikernels, meet Docker!</em> <br />Today, unikernels took to the stage at DockerCon EU in Barcelona!</p>
     <a href="/blog/2015/unikernels-meet-docker">Read More →</a>
-  </div>
+  </div>-->
 
   {% unless page.tags == empty %}
-    <h5>Tags</h5>
+    <h2>Tags</h2>
     {% if page.tags != nil %}
       {% assign tags_list = page.tags | sort %}
     {% else %}  
@@ -17,7 +15,5 @@
       {% include custom/tags_list %}
     </ul>
   {% endunless %}
-
-</aside>
 
 

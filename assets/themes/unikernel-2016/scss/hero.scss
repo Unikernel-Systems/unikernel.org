@@ -1,0 +1,62 @@
+.hero {
+    text-align: center;
+    padding-top: 48px;
+    padding-bottom: 42px;
+    
+    @include breakpoint(small down) {
+        padding-top: 38px;
+        padding-bottom: 32px;
+    }
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e292f+0,394f5c+100 */
+    background: #1e292f; /* Old browsers */
+    background: -moz-linear-gradient(top,  #1e292f 0%, #394f5c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #1e292f 0%,#394f5c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #1e292f 0%,#394f5c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e292f', endColorstr='#394f5c',GradientType=0 ); /* IE6-9 */
+    
+    .title {
+        font-size: 44px;
+        line-height: 44px;
+        font-weight: 300;
+        color: #ffffff;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        
+        @include breakpoint(small down) {
+            line-height: 34px;
+            font-size: 34px;
+        }
+    }
+    
+    .sub-title {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 300;
+        color: #ffffff;
+        margin-bottom: 0;
+    }
+    
+    &.home-hero {
+        padding-top: 120px;
+        padding-bottom: 115px;
+        
+        @include breakpoint(small down) {
+            padding-top: 60px;
+            padding-bottom: 55px;
+        }
+        
+        .title {
+            font-size: 51px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-transform: none;
+            
+            @include breakpoint(small down) {
+                font-size: 31px;
+            }
+        }
+    }
+    
+    
+}

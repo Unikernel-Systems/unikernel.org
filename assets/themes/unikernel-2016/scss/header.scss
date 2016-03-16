@@ -1,0 +1,73 @@
+.logo {
+    width: 210px;
+    padding: 14px 0;
+}
+
+.main-menu {
+    float: right;
+    
+    @include breakpoint(medium down) {
+        display: none;
+    }
+    
+    li {
+        &:first-child a {
+            border-left: 1px solid #d1d1d1;
+        }
+        
+        a {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 700;
+            color: $body-font-color;
+            text-transform: uppercase;
+            border-right: 1px solid #d1d1d1;
+            padding: 25px 44px;
+        }
+    }
+    
+    
+}
+
+.off-canvas-button {
+    @include hamburger($red, $red, 27px, 22px, 2px, 3);
+    display: none;
+    
+    &:active, &:focus {
+        outline: none;
+    }
+    
+    @include breakpoint(medium down) {
+        display: inline-block;
+        margin-right: 15px;
+    }
+}
+
+.off-canvas { //content
+    background-color: #394f5c;
+    height: 100%;
+    
+    .mobile-menu {
+        margin-top: 21px;
+        li {
+            display: block;
+            margin-bottom: 11px;
+            
+            a {
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 18px;
+                line-height: 20px;
+                font-weight: 700;
+                color: #ffffff;
+                text-transform: uppercase;
+                padding: 8px 20px 11px;
+                
+                
+                &:hover{
+                    background-color: #2b3e49;
+                }
+            }
+        }
+    }
+}

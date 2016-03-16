@@ -1,0 +1,99 @@
+h1, .h1 {
+    font-size: 44px;
+    line-height: 44px;
+}
+
+h2, .h2 {
+    font-size: 34px;
+    line-height: 38px;
+    margin-bottom: 23px;
+}
+
+h3, .h3 {
+    font-size: 26px;
+    line-height: 34px;
+}
+
+/*h4, .h4 {
+    font-size: 44px;
+    line-height: 44px;
+}
+
+h5, .h5 {
+    font-size: 44px;
+    line-height: 44px;
+}
+
+h6, .h6 {
+    font-size: 44px;
+    line-height: 44px;
+}*/
+
+p {
+    
+}
+
+p.lead {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 300;
+    font-family: $header-font-family;
+    margin-bottom: 30px;
+}
+
+p.image-credit {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+a {
+    font-weight: bold;
+    color: $red;
+    
+    &:hover {
+        color: $red-hover;
+    }
+}
+
+a.cta-pdf {
+    &:before {
+        content: "\61";
+        font-family: $unikernel-icon-font-family;
+        position: relative;
+        top: 3px;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tag-featured {
+    font-family: $header-font-family;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 15px;
+    color: $body-font-color;
+}
+
+.thumb {
+    @include boxshadow(0px 0px 7px rgba(0, 0, 0, 0.35));
+}
+
+.page-section {
+    padding: 40px 0;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-blue {
+    background-color: #f1f5f7;
+}

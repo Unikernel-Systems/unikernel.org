@@ -1,0 +1,27 @@
+<section class="hero">
+  <div class="row">
+    <div class="large-10 large-offset-1 columns">
+      <h1 class="title">Blog</h1>
+      <h2 class="sub-title">News and progress about unikernels</h2>
+    </div>
+  </div>
+</section>
+
+<div class="blog detail">
+  <article class="item">
+    <div class="row">
+      <div class="large-8 large-offset-1 columns article-content">
+        <a href="{{BASE_PATH}}/blog" class="back">&laquo; Back to all posts</a>
+      
+        <h1 class="h2"> {{ page.title }} </h1>
+        <span class="post-meta">Published on {{ page.date | date_to_long_string }} by {% include custom/multiauthor-page %}</span>
+        {{ content }}
+      </div>
+      
+      <aside class="sidebar large-2 columns end">
+        {% include custom/sidebar %}
+      </aside>
+    </div>
+  </article>
+</div>
+

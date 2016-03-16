@@ -1,0 +1,6 @@
+//boxshadow
+@mixin boxshadow($b){
+	box-shadow: ($b);
+	-webkit-box-shadow: ($b);
+	-moz-box-shadow: ($b);
+}

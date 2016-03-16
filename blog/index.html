@@ -5,38 +5,97 @@ header: Blog
 ---
 {% include JB/setup %}
 
-<div class="row">
-  <div class="large-12 columns">
-    <h1>Blog <small>News and progress about unikernels.</small></h1>
-    <hr/>
+<section class="hero">
+  <div class="row">
+    <div class="large-10 large-offset-1 columns">
+      <h1 class="title">Blog</h1>
+      <h2 class="sub-title">News and progress about unikernels</h2>
+    </div>
   </div>
-</div>
+</section>
 
-<div class="row">
-  <div class="large-9 columns" role="content">
-    {% for post in site.posts %}
-    <article>
-      <h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
-      <h6><em>{{ post.date | date_to_long_string }} by {% include custom/multiauthor-post %}</a></em></h6>
+
+<section class="page-section item-roll blog">
+  <div class="row">
+    <div class="large-10 large-offset-1 columns">
+      
+      <!--featured article-->
+      {% for post in site.posts %}
+          {% if post.featured == true %}
+            {% capture count %}{{ count | plus: '1' }}{% endcapture %}
+            {% if count == '1' %}
+      
+              <article class="item featured bg-blue">
+                <div class="row">
+                  <div class="medium-12 columns">
+                    <h2 class="tag-featured">Featured Article</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="medium-4 columns img-col">
+                    {% if post.image %}
+                      <img src="{{post.image}}"/>
+                    {% else %}
+                      <img src="http://placehold.it/400x300&text=[img]"/>
+                    {% endif %}
+                  </div>
+                  <div class="medium-8 columns">
+                    <h3 class="h2"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
+                    <span class="post-meta">{{ post.date | date_to_long_string }} by {% include custom/multiauthor-post %}</span>
+                    <p>{{ post.excerpt }}</p>
+                    <p><a href="{{ BASE_PATH }}{{ post.url }}">Read more &raquo;</a></p>
+                  </div>
+                </div>
+              </article>
+      
+            {% endif %}
+        {% endif %}
+      {% endfor %}
+      
+      
       <div class="row">
-        <div class="large-6 columns">
-          {{ post.excerpt }}
-          <p><a href="{{ BASE_PATH }}{{ post.url }}">Read more →</a></p>
-        </div>
-        <div class="large-6 columns">
-          {% if post.image %}
-            <img src="{{post.image}}"/>
-          {% else %}
-            <img src="http://placehold.it/400x300&text=[img]"/>
-          {% endif %}
-        </div>
-      </div>
-    </article>
-    <hr />
-    {% endfor %}
-    <h6><em><a href="{{BASE_PATH}}/archive">Post archive</a></em></h6>
-  </div>
+        
+        <div class="large-9 columns roll">
 
-  <!-- SIDEBAR -->
-  {% include custom/sidebar %}
-</div>
+          {% for post in site.posts %}
+              {% if post.featured %}
+                
+              {% else %}
+                <article class="item">
+                  <div class="row">
+                    <div class="medium-4 columns img-col">
+                      {% if post.image %}
+                        <img src="{{post.image}}"/>
+                      {% else %}
+                        <img src="http://placehold.it/400x300&text=[img]"/>
+                      {% endif %}
+                    </div>
+                    <div class="medium-8 columns">
+                      <h2 class="h3"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
+                      <span class="post-meta">{{ post.date | date_to_long_string }} by {% include custom/multiauthor-post %}</span>
+                      <p>{{ post.excerpt }}</p>
+                      <p><a href="{{ BASE_PATH }}{{ post.url }}">Read more &raquo;</a></p>
+                    </div>
+                  </div>
+                </article>
+            {% endif %}
+          {% endfor %}
+          
+        </div>
+        
+        <aside class="sidebar large-3 columns">
+          {% include custom/sidebar %}
+        </aside>
+        
+        
+      </div>
+      
+      <!--<div class="row">
+        <div class="large-12 columns">
+          <a href="{{BASE_PATH}}/archive">Post archive</a>
+        </div>
+      </div>-->
+      
+    </div>
+  </div>
+</section>

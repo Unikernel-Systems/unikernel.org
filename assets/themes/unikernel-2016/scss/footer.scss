@@ -1,0 +1,54 @@
+.main-footer {
+    padding: 30px 0;
+    border-top: 1px solid #d1d1d1;
+    
+    @include breakpoint(small down) {
+        padding: 20px 0;
+    }
+    
+    .main-menu {
+        
+        @include breakpoint(medium down) {
+            display: block;
+            float: none;
+        }
+    
+    
+        li {
+            a {
+                color: $red;
+                border: none;
+                padding: 0 30px;
+                
+                @include breakpoint(small down) {
+                    padding: 0;
+                    font-size: 12px;
+                    padding-right: 13px;
+                }
+            }
+            
+            &:first-child a {
+                @include breakpoint(medium down) {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    
+    .legal {
+        font-size: 16px;
+        line-height: 24px;
+        color: #6d6d6d;
+        margin-bottom: 0;
+        
+        @include breakpoint(medium down) {
+            margin-bottom: 20px;
+        }
+        
+        @include breakpoint(small down) {
+            font-size: 12px;
+            line-height: 16px;
+            margin-bottom: 10px;
+        }
+    }
+}
