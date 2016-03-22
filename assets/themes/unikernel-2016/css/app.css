@@ -2615,6 +2615,11 @@ img {
     transition: all 0.15s ease-in-out; }
     .main-menu li a:hover {
       background-color: #f1f5f7; }
+  .main-menu li.active a {
+    background-color: #405a68;
+    cursor: default; }
+    .main-menu li.active a:hover {
+      background-color: #405a68; }
 
 .off-canvas-button {
   position: relative;
@@ -2662,9 +2667,13 @@ img {
         padding: 8px 20px 11px;
         transition: all 0.15s ease-in-out; }
         .off-canvas .mobile-menu li a:hover {
+          color: #ffffff;
           background-color: #2b3e49; }
         .off-canvas .mobile-menu li a:active, .off-canvas .mobile-menu li a:focus {
           outline: none; }
+      .off-canvas .mobile-menu li.active a {
+        background-color: #2b3e49;
+        cursor: default; }
 
 .main-footer {
   padding: 30px 0;
@@ -2823,7 +2832,7 @@ img {
     .blog .item.featured h3 a {
       color: #405a68; }
       .blog .item.featured h3 a:hover {
-        color: #293a43; }
+        color: #2b3e49; }
 
 .blog .roll .item {
   padding-left: 0;
@@ -2846,7 +2855,7 @@ img {
   .blog .item h2 a {
     color: #405a68; }
     .blog .item h2 a:hover {
-      color: #293a43; }
+      color: #2b3e49; }
 
 .blog.detail .back {
   margin-bottom: 35px;

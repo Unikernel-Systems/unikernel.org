@@ -30,6 +30,17 @@
                 background-color: #f1f5f7;
             }
         }
+        
+        &.active {
+            a {
+                background-color: $teal;
+                cursor: default;
+                
+                &:hover {
+                    background-color: $teal;
+                }
+            }
+        }
     }
     
     
@@ -69,13 +80,20 @@
                 padding: 8px 20px 11px;
                 @include all-transition();
                 
-                
                 &:hover{
-                    background-color: #2b3e49;
+                    color: #ffffff;
+                    background-color: $teal-hover;
                 }
                 
                 &:active, &:focus {
                     outline: none;
+                }
+            }
+            
+            &.active {
+                a {
+                    background-color: $teal-hover;
+                    cursor: default;
                 }
             }
         }

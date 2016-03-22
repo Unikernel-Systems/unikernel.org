@@ -37,10 +37,10 @@
         <!--Off Canvas Content-->
         <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
           <ul class="menu mobile-menu">
-            <li><a href="{{BASE_PATH}}/">Home</a></li>
-            <li><a href="{{BASE_PATH}}/blog">Blog</a></li>
-            <li><a href="{{BASE_PATH}}/projects">Projects</a></li>
-            <li><a href="{{BASE_PATH}}/resources">Resources</a></li>
+            <li {% if "/" == page.url %} class="active" {% else %} {% endif %}><a href="{{BASE_PATH}}/">Home</a></li>
+            <li {% if "/blog/" == page.url %} class="active" {% else %} {% endif %}><a href="{{BASE_PATH}}/blog">Blog</a></li>
+            <li {% if "/projects/" == page.url %} class="active" {% else %} {% endif %}><a href="{{BASE_PATH}}/projects">Projects</a></li>
+            <li {% if "/resources/" == page.url %} class="active" {% else %} {% endif %}><a href="{{BASE_PATH}}/resources">Resources</a></li>
             <li><a href="https://devel.unikernel.org/t/contribute-to-unikernel-org/69">Contribute!</a></li>
           </ul>
         </div>
@@ -53,10 +53,16 @@
               <div class="medium-12 columns">
                 <button type="button" class="button off-canvas-button menu-icon" data-toggle="offCanvas"></button>
                 <a href="{{BASE_PATH}}/"><img class="logo" src="{{ ASSET_PATH }}/img/logo.png" alt="Unikernel logo"></a>
+                <!--<ul class="menu float-right main-menu">
+                  {% assign pages_list = site.pages %}
+                  {% assign group = 'navigation' %}
+                  {% include JB/pages_list %}
+                  <li><a href="https://devel.unikernel.org/t/contribute-to-unikernel-org/69">Contribute!</a></li>
+                </ul>-->
                 <ul class="menu float-right main-menu">
-                  <li><a href="{{BASE_PATH}}/blog">Blog</a></li>
-                  <li><a href="{{BASE_PATH}}/projects">Projects</a></li>
-                  <li><a href="{{BASE_PATH}}/resources">Resources</a></li>
+                  <li {% if "/blog/" == page.url %} class="active" {% else %} {% endif %}><a href="{{BASE_PATH}}/blog">Blog</a></li>
+                  <li {% if "/projects/" == page.url %} class="active" {% else %} {% endif %}><a href="{{BASE_PATH}}/projects">Projects</a></li>
+                  <li {% if "/resources/" == page.url %} class="active" {% else %} {% endif %}><a href="{{BASE_PATH}}/resources">Resources</a></li>
                   <li><a href="https://devel.unikernel.org/t/contribute-to-unikernel-org/69">Contribute!</a></li>
                 </ul>
               </div>
