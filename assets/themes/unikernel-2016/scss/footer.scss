@@ -25,6 +25,11 @@
                     font-size: 12px;
                     padding-right: 13px;
                 }
+                
+                &:hover {
+                    background-color: transparent;
+                    color: $red-hover;
+                }
             }
             
             &:first-child a {

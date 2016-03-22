@@ -49,6 +49,7 @@ p.image-credit {
 a {
     font-weight: bold;
     color: $red;
+    @include all-transition();
     
     &:hover {
         color: $red-hover;
@@ -83,7 +84,12 @@ img {
 }
 
 .thumb {
+    @include all-transition();
     @include boxshadow(0px 0px 7px rgba(0, 0, 0, 0.35));
+    
+    &:hover {
+        @include boxshadow(0px 0px 7px rgba(0, 0, 0, 0.65));
+    }
 }
 
 .page-section {

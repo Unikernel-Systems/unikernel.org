@@ -2546,7 +2546,8 @@ p.image-credit {
 
 a {
   font-weight: bold;
-  color: #f14f27; }
+  color: #f14f27;
+  transition: all 0.15s ease-in-out; }
   a:hover {
     color: #d04725; }
 
@@ -2573,9 +2574,14 @@ img {
   color: #414141; }
 
 .thumb {
+  transition: all 0.15s ease-in-out;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
   -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.35); }
+  .thumb:hover {
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.65);
+    -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.65); }
 
 .page-section {
   padding: 40px 0; }
@@ -2605,7 +2611,10 @@ img {
     color: #414141;
     text-transform: uppercase;
     border-right: 1px solid #d1d1d1;
-    padding: 25px 44px; }
+    padding: 25px 44px;
+    transition: all 0.15s ease-in-out; }
+    .main-menu li a:hover {
+      background-color: #f1f5f7; }
 
 .off-canvas-button {
   position: relative;
@@ -2650,9 +2659,12 @@ img {
         font-weight: 700;
         color: #ffffff;
         text-transform: uppercase;
-        padding: 8px 20px 11px; }
+        padding: 8px 20px 11px;
+        transition: all 0.15s ease-in-out; }
         .off-canvas .mobile-menu li a:hover {
           background-color: #2b3e49; }
+        .off-canvas .mobile-menu li a:active, .off-canvas .mobile-menu li a:focus {
+          outline: none; }
 
 .main-footer {
   padding: 30px 0;
@@ -2673,6 +2685,9 @@ img {
         padding: 0;
         font-size: 12px;
         padding-right: 13px; } }
+    .main-footer .main-menu li a:hover {
+      background-color: transparent;
+      color: #d04725; }
   @media screen and (max-width: 63.9375em) {
     .main-footer .main-menu li:first-child a {
       padding-left: 0; } }
@@ -2777,8 +2792,10 @@ img {
 .projects .item.featured:hover {
   background-color: transparent; }
 
-.projects .item:hover {
-  background-color: #f1f5f7; }
+.projects .item {
+  transition: all 0.15s ease-in-out; }
+  .projects .item:hover {
+    background-color: #f1f5f7; }
 
 /*RESOURCES*/
 .resources .item.featured a.cta-pdf {
@@ -2805,6 +2822,8 @@ img {
     margin-bottom: 8px; }
     .blog .item.featured h3 a {
       color: #405a68; }
+      .blog .item.featured h3 a:hover {
+        color: #293a43; }
 
 .blog .roll .item {
   padding-left: 0;
@@ -2826,6 +2845,8 @@ img {
   margin-bottom: 7px; }
   .blog .item h2 a {
     color: #405a68; }
+    .blog .item h2 a:hover {
+      color: #293a43; }
 
 .blog.detail .back {
   margin-bottom: 35px;

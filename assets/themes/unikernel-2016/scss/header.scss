@@ -24,6 +24,11 @@
             text-transform: uppercase;
             border-right: 1px solid #d1d1d1;
             padding: 25px 44px;
+            @include all-transition();
+            
+            &:hover {
+                background-color: #f1f5f7;
+            }
         }
     }
     
@@ -62,10 +67,15 @@
                 color: #ffffff;
                 text-transform: uppercase;
                 padding: 8px 20px 11px;
+                @include all-transition();
                 
                 
                 &:hover{
                     background-color: #2b3e49;
+                }
+                
+                &:active, &:focus {
+                    outline: none;
                 }
             }
         }
