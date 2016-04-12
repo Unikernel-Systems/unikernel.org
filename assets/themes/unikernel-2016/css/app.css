@@ -2892,6 +2892,10 @@ img {
   border: none;
   padding: 40px 0; }
 
+@media screen and (max-width: 63.9375em) {
+  .blog.detail .article-content {
+    margin-bottom: 10px; } }
+
 .blog.detail .article-content h2, .blog.detail .article-content h3, .blog.detail .article-content h4 {
   margin-top: 25px; }
 

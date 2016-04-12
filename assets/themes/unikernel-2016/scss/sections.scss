@@ -201,6 +201,9 @@
         
         .article-content {
             
+            @include breakpoint(medium down) {
+                margin-bottom: 10px;
+            }
             h2, h3, h4{
                 margin-top: 25px;
             }
