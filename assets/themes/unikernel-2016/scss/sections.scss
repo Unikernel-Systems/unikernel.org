@@ -105,11 +105,11 @@
     .item.featured {
         padding: 20px;
         
-        h2 {
+        .tag-featured {
             margin-bottom: 20px;
         }
         
-        h3 {
+        .post-title {
             margin-bottom: 8px;
             
             a {
@@ -145,8 +145,8 @@
             display: block;
         }
         
-        h2 {
-            margin-bottom: 7px;
+        .post-title {
+            margin-bottom: 10px;
             
             a {
                 color: $teal;
@@ -154,6 +154,20 @@
                 &:hover {
                     color: $teal-hover
                 }
+            }
+        }
+        
+        .img-col .post-title {
+            display: none;
+            
+            @include breakpoint(small down) {
+                display: block;
+            }
+        }
+        
+        .text-col .post-title {
+            @include breakpoint(small down) {
+                display: none;
             }
         }
     }
@@ -187,8 +201,6 @@
         
         .article-content {
             
-            padding: 0;
-            
             h2, h3, h4{
                 margin-top: 25px;
             }
@@ -212,8 +224,8 @@
         margin-left: 0;
         
         a {
-            font-size: 18px;
-            line-height: 30px;
+            font-size: 16px;
+            line-height: 22px;
         }
         
         li {

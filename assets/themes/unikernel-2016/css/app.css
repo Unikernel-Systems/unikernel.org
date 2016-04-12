@@ -2747,7 +2747,9 @@ img {
     line-height: 30px;
     font-weight: 300;
     color: #ffffff;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    display: block;
+    font-family: "Ubuntu", sans-serif; }
   .hero.home-hero {
     padding-top: 120px;
     padding-bottom: 115px; }
@@ -2825,13 +2827,13 @@ img {
 /*BLOG*/
 .blog .item.featured {
   padding: 20px; }
-  .blog .item.featured h2 {
+  .blog .item.featured .tag-featured {
     margin-bottom: 20px; }
-  .blog .item.featured h3 {
+  .blog .item.featured .post-title {
     margin-bottom: 8px; }
-    .blog .item.featured h3 a {
+    .blog .item.featured .post-title a {
       color: #405a68; }
-      .blog .item.featured h3 a:hover {
+      .blog .item.featured .post-title a:hover {
         color: #2b3e49; }
 
 .blog .roll .item {
@@ -2850,12 +2852,22 @@ img {
   margin-bottom: 14px;
   display: block; }
 
-.blog .item h2 {
-  margin-bottom: 7px; }
-  .blog .item h2 a {
+.blog .item .post-title {
+  margin-bottom: 10px; }
+  .blog .item .post-title a {
     color: #405a68; }
-    .blog .item h2 a:hover {
+    .blog .item .post-title a:hover {
       color: #2b3e49; }
+
+.blog .item .img-col .post-title {
+  display: none; }
+  @media screen and (max-width: 39.9375em) {
+    .blog .item .img-col .post-title {
+      display: block; } }
+
+@media screen and (max-width: 39.9375em) {
+  .blog .item .text-col .post-title {
+    display: none; } }
 
 .blog.detail .back {
   margin-bottom: 35px;
@@ -2877,10 +2889,8 @@ img {
   border: none;
   padding: 40px 0; }
 
-.blog.detail .article-content {
-  padding: 0; }
-  .blog.detail .article-content h2, .blog.detail .article-content h3, .blog.detail .article-content h4 {
-    margin-top: 25px; }
+.blog.detail .article-content h2, .blog.detail .article-content h3, .blog.detail .article-content h4 {
+  margin-top: 25px; }
 
 .sidebar {
   padding-top: 37px; }
@@ -2893,7 +2903,7 @@ img {
     list-style: none;
     margin-left: 0; }
     .sidebar ul a {
-      font-size: 18px;
-      line-height: 30px; }
+      font-size: 16px;
+      line-height: 22px; }
     .sidebar ul li {
       margin-bottom: 20px; }

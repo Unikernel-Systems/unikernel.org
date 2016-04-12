@@ -9,7 +9,7 @@ header: Blog
   <div class="row">
     <div class="large-10 large-offset-1 columns">
       <h1 class="title">Blog</h1>
-      <h2 class="sub-title">News and progress about unikernels</h2>
+      <span class="sub-title">News and progress about unikernels</span>
     </div>
   </div>
 </section>
@@ -24,30 +24,31 @@ header: Blog
           {% if post.featured == true %}
             {% capture count %}{{ count | plus: '1' }}{% endcapture %}
             {% if count == '1' %}
-      
-              <article class="item featured bg-blue">
+              <section class="item featured bg-blue">
                 <div class="row">
                   <div class="medium-12 columns">
                     <h2 class="tag-featured">Featured Article</h2>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="medium-4 columns img-col">
-                    {% if post.image %}
-                      <img src="{{BASE_PATH}}{{post.image}}"/>
-                    {% else %}
-                      <img src="http://placehold.it/400x300&text=[img]"/>
-                    {% endif %}
+                <article>
+                  <div class="row">
+                    <div class="medium-4 columns img-col">
+                      <h1 class="h2 post-title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
+                      {% if post.image %}
+                        <img src="{{BASE_PATH}}{{post.image}}"/>
+                      {% else %}
+                        <img src="http://placehold.it/400x300&text=[img]"/>
+                      {% endif %}
+                    </div>
+                    <div class="medium-8 columns text-col">
+                      <h1 class="h2 post-title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
+                      <span class="post-meta">{{ post.date | date_to_long_string }} by {% include custom/multiauthor-post %}</span>
+                      <p>{{ post.excerpt }}</p>
+                      <p><a href="{{ BASE_PATH }}{{ post.url }}">Read more &raquo;</a></p>
+                    </div>
                   </div>
-                  <div class="medium-8 columns">
-                    <h3 class="h2"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
-                    <span class="post-meta">{{ post.date | date_to_long_string }} by {% include custom/multiauthor-post %}</span>
-                    <p>{{ post.excerpt }}</p>
-                    <p><a href="{{ BASE_PATH }}{{ post.url }}">Read more &raquo;</a></p>
-                  </div>
-                </div>
-              </article>
-      
+                </article>
+              </section>
             {% endif %}
         {% endif %}
       {% endfor %}
@@ -64,14 +65,15 @@ header: Blog
                 <article class="item">
                   <div class="row">
                     <div class="medium-4 columns img-col">
+                      <h1 class="h3 post-title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
                       {% if post.image %}
                         <img src="{{BASE_PATH}}{{post.image}}"/>
                       {% else %}
                         <img src="http://placehold.it/400x300&text=[img]"/>
                       {% endif %}
                     </div>
-                    <div class="medium-8 columns">
-                      <h2 class="h3"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
+                    <div class="medium-8 columns text-col">
+                      <h1 class="h3 post-title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
                       <span class="post-meta">{{ post.date | date_to_long_string }} by {% include custom/multiauthor-post %}</span>
                       <p>{{ post.excerpt }}</p>
                       <p><a href="{{ BASE_PATH }}{{ post.url }}">Read more &raquo;</a></p>
