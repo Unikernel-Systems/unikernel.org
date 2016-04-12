@@ -33,6 +33,9 @@
 .icon-pdf:before {
   content: "\61"; }
 
+.icon-feed:before {
+  content: "\62"; }
+
 /**
  * Foundation for Sites by ZURB
  * Version 6.2.0
@@ -2907,3 +2910,12 @@ img {
       line-height: 22px; }
     .sidebar ul li {
       margin-bottom: 20px; }
+  .sidebar .subscribe {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 23px; }
+    .sidebar .subscribe .icon-feed {
+      font-size: 18px;
+      margin-right: 10px;
+      position: relative;
+      top: 1px; }

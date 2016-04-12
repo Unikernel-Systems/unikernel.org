@@ -1,19 +1,15 @@
-<!--  <div class="panel">
-    <h5>Featured</h5>
-    <p><em>Unikernels, meet Docker!</em> <br />Today, unikernels took to the stage at DockerCon EU in Barcelona!</p>
-    <a href="/blog/2015/unikernels-meet-docker">Read More →</a>
-  </div>-->
-
-  {% unless page.tags == empty %}
-    <h2>Tags</h2>
-    {% if page.tags != nil %}
-      {% assign tags_list = page.tags | sort %}
-    {% else %}  
-      {% assign tags_list = site.tags %}
-    {% endif %}
-    <ul class="side-nav">
-      {% include custom/tags_list %}
-    </ul>
-  {% endunless %}
+{% unless page.tags == empty %}
+  <h2 class="subscribe"><a href="{{BASE_PATH}}/atom.xml"><i class="icon-feed"></i>Subscribe</a></h2>
+  
+  <h2>Tags</h2>
+  {% if page.tags != nil %}
+    {% assign tags_list = page.tags | sort %}
+  {% else %}  
+    {% assign tags_list = site.tags %}
+  {% endif %}
+  <ul class="side-nav">
+    {% include custom/tags_list %}
+  </ul>
+{% endunless %}
 
 
