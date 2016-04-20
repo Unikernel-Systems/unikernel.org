@@ -7,13 +7,13 @@ author-urls:
 - 'https://github.com/alfred-bratterud'
 date: 2015-12-15 14:30:00
 tags: [unikernel, includeos, release]
-image: /images/IncludeOS_logo.svg
+image: /images/IncludeOS_logo.jpg
 excerpt: "We've finally opened the lid on IncludeOS, just in time for the IEEE CloudCom paper presentation recently. A preprint of the paper is available from our repo. However, we've done quite a lot of work since the paper was written, so here's an update on what IncludeOS is now, and what you can expect in the near future."
 shorturl: 
 ---
 {% include JB/setup %}
 
-![IncludeOS]({{BASE_PATH}}/images/IncludeOS_logo.svg)
+![IncludeOS]({{BASE_PATH}}/images/IncludeOS_logo.jpg)
 
 *Alfred Bratterud is Assistant Professor and PhD scholar at Oslo and Akershus University College of Applied Science where he is currently working full time leading the development of IncludeOS at the NetSys research group.*
 

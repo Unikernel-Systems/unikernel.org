@@ -5,179 +5,121 @@ tagline:
 ---
 {% include JB/setup %}
 
-<div class="row">
-  <div class="large-12 columns">
-    <h1>Resources <small>Articles about Unikernels.</small></h1>
-    <hr/>
-  </div>
-</div>
-
-<div class="row">
-  <div class="large-8 columns">
-    <h4>An Introduction to Unikernels</h4>
-    <div class="row">
-      <!-- <div class="large-6 columns"> -->
-        <!-- this space left intentionally blank :) -->
-      <!-- </div> -->
-      <div class="large-12 columns">
-        <p>The technology behind unikernels has been developed over the last five years, and is described in the following publications. Many of these papers have been published in top computer science conferences.</p>
-        <p>The Communications of the ACM published a high-level overview of the unikernels architecture that asks: <em>"What if all the software layers in a virtual appliance were compiled within the same safe, high-level language framework?"</em></p>
-        <p>If you have articles or papers you think should be here, <a href="https://github.com/Unikernel-Systems/unikernel.org/issues/new">please let us know!</a></p>
-      </div>
+<section class="hero">
+  <div class="row">
+    <div class="large-10 large-offset-1 columns">
+      <h1 class="title">Resources</h1>
+      <span class="sub-title">Articles about Unikernels</span>
     </div>
   </div>
-  <div class="large-4 columns">
-    <a href="{{BASE_PATH}}/files/2014-cacm-unikernels.pdf"><img src="{{BASE_PATH}}/files/2014-cacm-unikernels.png"></a>
-  </div>  
-</div>
+</section>
 
-<div class="row">
-  <hr>
-  <div class="large-3 columns">
-    <a href="{{BASE_PATH}}/files/2013-asplos-mirage.pdf"><img src="{{BASE_PATH}}/files/2013-asplos-mirage.png"></a>
-  </div>  
-  <div class="large-6 columns">
-    <h5>Unikernels: Library Operating Systems for the Cloud</h5>
-    <p>This was the first outing in 2013 for unikernels as a compelling technique for building specialised infrastructure components such as DNS, HTTP or OpenFlow switches. It explains the single-address space memory layout for x86_64 Xen unikernels, how they work with the MirageOS OCaml code, and very competitive performance despite end-to-end type-safety down to the device drivers.</p>
-  </div>
-  <div class="large-3 columns">
-    <!-- <h6><em>Related</em></h6>
-    <ul>
-      <li>List</li>
-      <li>of</li>
-      <li>links</li>
-    </ul> -->
-  </div>  
-</div>
 
-<div class="row">
-  <hr>
-  <div class="large-3 columns">
-    <a href="http://www.fixup.fi/misc/usenix-login-2015/login_oct15_02_kantee.pdf"><img src="{{BASE_PATH}}/files/2015-rise-fall-os-kantee.png"></a>
-  </div>
-  <div class="large-6 columns">
-    <h5>The Rise and Fall of the Operating System</h5>
-    <p>In this article from 2015, Antti Kantee takes us on a brief tour of how and why the operating systems of today came about, then makes the case that "in the ages past the mountain-machine, there is no one all-encompassing operating system because there are so many styles to computing". He explains the role of rump kernels in providing componentized, reusable, production-quality drivers to support running existing applications in new styles of computing — as demonstrated by the Rumprun unikernel — and concludes with splitting the operating system and drivers into separate paths of systems development.</p>      
-  </div>
-  <div class="large-3 columns">
-    <!-- <h6><em>Related</em></h6>
-    <ul>
-      <li>List</li>
-      <li>of</li>
-      <li>links</li>
-    </ul> -->
-  </div>
-</div>
+<section class="page-section item-roll resources">
+  <div class="row">
+    <div class="large-10 large-offset-1 columns">
+	  
+	  
+      <article class="item featured">
+        <div class="row">
+          <div class="medium-8 columns">
+            <h1 class="h2">An Introduction to Unikernels</h1>
+            <p class="lead">The technology behind unikernels has been developed over the last five years, and is described in the following publications. Many of these papers have been published in top computer science conferences.</p>
+            <p>The Communications of the ACM published a high-level overview of the unikernels architecture that asks: "What if all the software layers in a virtual appliance were compiled within the same safe, high-level language framework?"</p>
+            <p>If you have articles or papers you think should be here, <a href="https://github.com/Unikernel-Systems/unikernel.org/issues/new">please let us know!</a></p>
+          </div>
+          <div class="medium-4 columns img-col">
+            <a href="{{BASE_PATH}}/files/2014-cacm-unikernels.pdf"><img class="thumb" src="{{BASE_PATH}}/files/2014-cacm-unikernels-thumb.jpg"></a>
+            <a href="{{BASE_PATH}}/files/2014-cacm-unikernels.pdf" class="cta-pdf">View PDF</a>
+          </div>
+        </div>
+      </article>
+	  
+	  <article class="item">
+        <div class="row">
+          <div class="medium-8 columns">
+            <h1 class="h3">Unikernels: Library Operating Systems for the Cloud</h1>
+            <p>This was the first outing in 2013 for unikernels as a compelling technique for building specialised infrastructure components such as DNS, HTTP or OpenFlow switches. It explains the single-address space memory layout for x86_64 Xen unikernels, how they work with the MirageOS OCaml code, and very competitive performance despite end-to-end type-safety down to the device drivers.</p>
+          </div>
+          <div class="medium-4 columns">
+            <a href="{{BASE_PATH}}/files/2013-asplos-mirage.pdf"><img class="thumb" src="{{BASE_PATH}}/files/2013-asplos-mirage.png"></a>
+          </div> 
+        </div>
+      </article>
+      
+      <article class="item">
+        <div class="row">
+          <div class="medium-8 columns">
+            <h1 class="h3">The Rise and Fall of the Operating System</h1>
+            <p>In this article from 2015, Antti Kantee takes us on a brief tour of how and why the operating systems of today came about, then makes the case that "in the ages past the mountain-machine, there is no one all-encompassing operating system because there are so many styles to computing". He explains the role of rump kernels in providing componentized, reusable, production-quality drivers to support running existing applications in new styles of computing — as demonstrated by the Rumprun unikernel — and concludes with splitting the operating system and drivers into separate paths of systems development.</p>      
+          </div>
+          <div class="medium-4 columns">
+            <a href="http://www.fixup.fi/misc/usenix-login-2015/login_oct15_02_kantee.pdf"><img class="thumb" src="{{BASE_PATH}}/files/2015-rise-fall-os-kantee.png"></a>
+          </div>
+        </div>
+      </article>
+      
+      <article class="item">
+        <div class="row">
+          <div class="medium-8 columns">
+            <h1 class="h3">Jitsu: Just-In-Time Summoning of Unikernels</h1>
+            <p>This 2015 paper introduces the Xen/ARMv7 port of unikernels that run on commodity boards (e.g. the £39 Cubieboard2) and are thus suitable for building IoT clouds. It also shows off the fast boot capability of unikernels via the Jitsu Xen toolstack, which boots a VM in response to DNS lookups in real time. Unikernel VMs can often boot faster than a Linux container, due to their lack of reliance on disk access. It also illustrates the security advantages of unikernels vs a conventional Linux stack.</p>
+          </div>
+          <div class="medium-4 columns">
+            <a href="{{BASE_PATH}}/files/2015-nsdi-jitsu.pdf"><img class="thumb" src="{{BASE_PATH}}/files/2015-nsdi-jitsu.png"></a>
+          </div>  
+        </div>
+      </article>
+      
+      <article class="item">
+        <div class="row">
+          <div class="medium-8 columns">
+            <h1 class="h3">Not-quite-so-broken TLS: lessons in re-engineering a security protocol specification and implementation</h1>
+            <p>Existing SSL/TLS stacks remain stubbornly vulnerable to low-level attacks and logical errors in their state machines. This paper describes how we rebuilt the protocol from scratch to be fundamentally more resistant to such attacks, while remaining fully interoperable with external services. To assure ourself of this, the same nqsb-TLS code can be used as an oracle to verify that protocol traces from OpenSSL or other implementations conform to its behaviour.</p>
+          </div>
+          <div class="medium-4 columns">
+            <a href="{{BASE_PATH}}/files/2015-nqsbtls-usenixsec.pdf"><img class="thumb" src="{{BASE_PATH}}/files/2015-nqsbtls-usenixsec.png"></a>
+          </div>
+        </div>
+      </article>
+      
+      <article class="item">
+        <div class="row">
+          <div class="medium-8 columns">
+            <h1 class="h3">Mergeable Persistent Data Structures</h1>
+            <p>Since unikernels do not have a conventional filesystem, we had the opportunity to build one custom-made for distributed, delay-tolerant environments such as a cloud or IoT. Irmin is based on the same techniques as the Git version control system, but scaled up to support a full unikernel filesystem.</p>
+          </div>
+          <div class="medium-4 columns">
+            <a href="{{BASE_PATH}}/files/2015-jfla-irmin.pdf"><img class="thumb" src="{{BASE_PATH}}/files/2015-jfla-irmin.png"></a>
+          </div> 
+        </div>
+      </article>
+      
+      <article class="item">
+        <div class="row">
+          <div class="medium-8 columns">
+            <h1 class="h3">SibylFS: formal specification and oracle-based testing for POSIX and real-world file systems</h1>
+            <p>Since existing applications often require a POSIX filesystem, we also designed a mechanism for mathematically specifying what it means to be POSIX at all (normally difficult to ascertain due to it only being written down as a large, prose specification). We use this model for two purposes: to test existing filesystems for compliance and find several bugs, but also as the reference design for a unikernel POSIX filesystem that guarantees compliance.</p>
+          </div>
+          <div class="medium-4 columns">
+            <a href="{{BASE_PATH}}/files/2015-sibylfs-sosp.pdf"><img class="thumb" src="{{BASE_PATH}}/files/2015-sibylfs-sosp.png"></a>
+          </div> 
+        </div>
+      </article>
+      
+      <article class="item">
+        <div class="row">
+          <div class="medium-8 columns">
+            <h1 class="h3">Declarative foreign function binding through generic programming</h1>
+            <p>Unikernels run a single language runtime per VM address space, and so multiple languages form a distributed system. MirageOS (written in OCaml) supports a sophisticated foreign function interface that lets it interoperate with other language runtimes running inside other virtual machines. This lets us construct unikernel enclaves that run older applications written in C/C++/Node.js/etc, but handling all network traffic such as TCP/IP or TLS via the safe MirageOS unikernel.</p>
+          </div>
+          <div class="medium-4 columns">
+            <a href="{{BASE_PATH}}/files/2016-cmeleon-flops.pdf"><img class="thumb" src="{{BASE_PATH}}/files/2016-cmeleon-flops.png"></a>
+          </div> 
+        </div>
+      </article>
+	  
 
-<div class="row">
-  <hr>
-  <div class="large-3 columns">
-    <a href="{{BASE_PATH}}/files/2015-nsdi-jitsu.pdf"><img src="{{BASE_PATH}}/files/2015-nsdi-jitsu.png"></a>
-  </div>  
-  <div class="large-6 columns">
-    <h5>Jitsu: Just-In-Time Summoning of Unikernels</h5>
-    <p>This 2015 paper introduces the Xen/ARMv7 port of unikernels that run on commodity boards (e.g. the £39 Cubieboard2) and are thus suitable for building IoT clouds. It also shows off the fast boot capability of unikernels via the Jitsu Xen toolstack, which boots a VM in response to DNS lookups in real time. Unikernel VMs can often boot faster than a Linux container, due to their lack of reliance on disk access. It also illustrates the security advantages of unikernels vs a conventional Linux stack.</p>
+	</div>
   </div>
-  <div class="large-3 columns">
-    <!-- <h6><em>Related</em></h6>
-    <ul>
-      <li>List</li>
-      <li>of</li>
-      <li>links</li>
-    </ul> -->
-  </div>  
-</div>
-
-<div class="row">
-  <hr>
-  <div class="large-3 columns">
-    <a href="{{BASE_PATH}}/files/2015-nqsbtls-usenixsec.pdf"><img src="{{BASE_PATH}}/files/2015-nqsbtls-usenixsec.png"></a>
-  </div>  
-  <div class="large-6 columns">
-    <h5>Not-quite-so-broken TLS: lessons in re-engineering a security protocol specification and implementation</h5>
-    <p>Existing SSL/TLS stacks remain stubbornly vulnerable to low-level attacks and logical errors in their state machines. This paper describes how we rebuilt the protocol from scratch to be fundamentally more resistant to such attacks, while remaining fully interoperable with external services. To assure ourself of this, the same nqsb-TLS code can be used as an oracle to verify that protocol traces from OpenSSL or other implementations conform to its behaviour.</p>
-  </div>
-  <div class="large-3 columns">
-    <!-- <h6><em>Related</em></h6>
-    <ul>
-      <li>List</li>
-      <li>of</li>
-      <li>links</li>
-    </ul> -->
-  </div>  
-</div>
-
-<div class="row">
-  <hr>
-  <div class="large-3 columns">
-    <a href="{{BASE_PATH}}/files/2015-jfla-irmin.pdf"><img src="{{BASE_PATH}}/files/2015-jfla-irmin.png"></a>
-  </div>  
-  <div class="large-6 columns">
-    <h5>Mergeable Persistent Data Structures</h5>
-    <p>Since unikernels do not have a conventional filesystem, we had the opportunity to build one custom-made for distributed, delay-tolerant environments such as a cloud or IoT. Irmin is based on the same techniques as the Git version control system, but scaled up to support a full unikernel filesystem.</p>
-  </div>
-  <div class="large-3 columns">
-   <!--  <h6><em>Related</em></h6>
-    <ul>
-      <li>List</li>
-      <li>of</li>
-      <li>links</li> -->
-    </ul>
-  </div>  
-</div>
-
-<div class="row">
-  <hr>
-  <div class="large-3 columns">
-    <a href="{{BASE_PATH}}/files/2015-sibylfs-sosp.pdf"><img src="{{BASE_PATH}}/files/2015-sibylfs-sosp.png"></a>
-  </div>  
-  <div class="large-6 columns">
-    <h5>SibylFS: formal specification and oracle-based testing for POSIX and real-world file systems</h5>
-    <p>Since existing applications often require a POSIX filesystem, we also designed a mechanism for mathematically specifying what it means to be POSIX at all (normally difficult to ascertain due to it only being written down as a large, prose specification). We use this model for two purposes: to test existing filesystems for compliance and find several bugs, but also as the reference design for a unikernel POSIX filesystem that guarantees compliance.</p>
-  </div>
-  <div class="large-3 columns">
-    <!-- <h6><em>Related</em></h6>
-    <ul>
-      <li>List</li>
-      <li>of</li>
-      <li>links</li> -->
-    </ul>
-  </div>  
-</div>
-
-<div class="row">
-  <hr>
-  <div class="large-3 columns">
-    <a href="{{BASE_PATH}}/files/2016-cmeleon-flops.pdf"><img src="{{BASE_PATH}}/files/2016-cmeleon-flops.png"></a>
-  </div>  
-  <div class="large-6 columns">
-    <h5>Declarative foreign function binding through generic programming</h5>
-    <p>Unikernels run a single language runtime per VM address space, and so multiple languages form a distributed system. MirageOS (written in OCaml) supports a sophisticated foreign function interface that lets it interoperate with other language runtimes running inside other virtual machines. This lets us construct unikernel enclaves that run older applications written in C/C++/Node.js/etc, but handling all network traffic such as TCP/IP or TLS via the safe MirageOS unikernel.</p>
-  </div>
-  <div class="large-3 columns">
-    <!-- <h6><em>Related</em></h6>
-    <ul>
-      <li>List</li>
-      <li>of</li>
-      <li>links</li>
-    </ul> -->
-  </div>  
-</div>
-
-<!-- <div class="row">
-  <hr>
-  <div class="large-3 columns">
-    <h5>This is a content section.</h5>
-    <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-  </div>
-  <div class="large-3 columns">
-    <img src="http://placehold.it/400x300&text=[img]">
-  </div>  
-  <div class="large-3 columns">
-    <h5>This is a content section.</h5>
-    <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-  </div>
-  <div class="large-3 columns">
-    <img src="http://placehold.it/400x300&text=[img]">
-  </div>  
-</div> -->
+</section>

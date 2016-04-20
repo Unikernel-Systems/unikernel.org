@@ -1,0 +1,251 @@
+/*HOME*/
+.twitter-feed {
+    
+    @include breakpoint(small down) {
+        margin-top: 20px;
+    }
+    
+    iframe {
+        outline: 1px solid #d1d1d1;
+    }
+}
+
+
+
+/*ITEM ROLL*/
+.item-roll {
+    
+}
+
+.item {
+    padding: 44px 20px 28px;
+    display: block;
+    border-top: 1px solid #d1d1d1;
+    height: 100%;
+    
+    .img-col {
+        float: right;
+        
+        @include breakpoint(small down) {
+            float: none;
+            margin-bottom: 20px;
+        }
+        
+        img {
+            @include breakpoint(small down) {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.item.featured {
+    padding: 20px 0 50px;
+    border-top: none;
+}
+
+
+
+/*PROJECTS*/
+.projects {
+    .item.featured {
+        .img-col {
+            @include breakpoint(small down) {
+                display:  none;
+            }
+        }
+        
+        &:hover {
+            background-color: transparent;
+        }
+    }
+    
+    .item {
+        @include all-transition();
+        
+        &:hover {
+            background-color: #f1f5f7;
+        }
+    }
+}
+
+
+
+/*RESOURCES*/
+.resources {
+    
+    .item.featured {
+        a.cta-pdf {
+            display: block;
+            text-align: center;
+            margin-top: 7px;
+        }
+        
+        img {
+            max-width: 100%;
+            margin-bottom: 0;
+        }
+    }
+
+    .item {    
+        img {
+            max-width: 180px;
+            height: auto;
+            margin: 0 auto 16px;
+            display: block;
+        }
+    }
+}
+
+
+
+/*BLOG*/
+.blog {
+    .item.featured {
+        padding: 20px;
+        
+        .tag-featured {
+            margin-bottom: 20px;
+        }
+        
+        .post-title {
+            margin-bottom: 8px;
+            
+            a {
+                color: $teal;
+                
+                &:hover {
+                    color: $teal-hover
+                }
+            }
+        }
+    }
+    
+    .roll {
+        .item {
+            padding-left: 0;
+            padding-right: 0;
+            margin-bottom: 0;
+            
+            &:first-child {
+                border: none;
+            }
+        }
+    }
+    
+    .item {
+        .post-meta {
+            font-family: $header-font-family;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 700;
+            color: $body-font-color;
+            margin-bottom: 14px;
+            display: block;
+        }
+        
+        .post-title {
+            margin-bottom: 10px;
+            
+            a {
+                color: $teal;
+                
+                &:hover {
+                    color: $teal-hover
+                }
+            }
+        }
+        
+        .img-col .post-title {
+            display: none;
+            
+            @include breakpoint(small down) {
+                display: block;
+            }
+        }
+        
+        .text-col .post-title {
+            @include breakpoint(small down) {
+                display: none;
+            }
+        }
+    }
+    
+    &.detail {
+        
+        .back {
+            margin-bottom: 35px;
+            display: block;
+            font-size: 18px;
+            line-height: 30px;
+            font-family: $header-font-family;
+        }
+        
+        h1 {
+            margin-bottom: 8px;
+        }
+        
+        .post-meta {
+            margin-bottom: 44px;
+        }
+        
+        .sidebar {
+            padding-top: 0;
+        }
+        
+        article {
+            border: none;
+            padding: 40px 0;
+        }
+        
+        .article-content {
+            
+            @include breakpoint(medium down) {
+                margin-bottom: 10px;
+            }
+            h2, h3, h4{
+                margin-top: 25px;
+            }
+        }
+    }
+
+}
+
+.sidebar {
+    padding-top: 37px;
+    
+    h2 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 13px;
+        text-transform: uppercase;
+    }
+    
+    ul {
+        list-style: none;
+        margin-left: 0;
+        
+        a {
+            font-size: 18px;
+            line-height: 30px;
+        }
+        
+        li {
+            margin-bottom: 20px;
+        }
+    }
+    
+    .subscribe {
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin-bottom: 23px;
+        
+        .icon-feed {
+            font-size: 18px;
+            margin-right: 10px;
+            position: relative;
+            top: 1px;
+        }
+    }
+}

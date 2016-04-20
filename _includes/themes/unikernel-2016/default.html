@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}{% if page.title == site.title %} - {{ site.tagline }}{% else %} | {{ site.title }}{% endif %}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <!-- <meta name="author" content="{{ site.author.name }}"> -->
+
+    <!-- Style sheets for Unikernel 2016 -->
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/app.css">
+
+<!--    <link rel="shortcut icon" href="/icons/favicon.png" />
+    <link rel="icon" href="/icons/favicon.ico" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />-->
+
+    <!-- fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png">
+  -->
+
+    <!-- atom & rss feed -->
+    <link rel="alternate" type="application/atom+xml" href="{{BASE_PATH}}/atom.xml" title="{{ site.title }} - {{ site.tagline }}" />
+
+    <script src="{{ ASSET_PATH }}/js/vendor/modernizr-custom.js"></script>
+  </head>
+
+  <body>
+    
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        
+        <!--Off Canvas Content-->
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+          <ul class="menu mobile-menu">
+            <li {% if "/" == page.url %} class="active" {% else %} {% endif %}><a href="{{BASE_PATH}}/">Home</a></li>
+            <li {% if "/blog/" == page.url %} class="active" {% else %} {% endif %}><a href="{{BASE_PATH}}/blog">Blog</a></li>
+            <li {% if "/projects/" == page.url %} class="active" {% else %} {% endif %}><a href="{{BASE_PATH}}/projects">Projects</a></li>
+            <li {% if "/resources/" == page.url %} class="active" {% else %} {% endif %}><a href="{{BASE_PATH}}/resources">Resources</a></li>
+            <li><a href="https://devel.unikernel.org/t/contribute-to-unikernel-org/69">Contribute!</a></li>
+          </ul>
+        </div>
+        
+        <!--On Canvas Content-->
+        <div class="off-canvas-content" data-off-canvas-content>
+          
+          <header class="main-header">
+            <div class="row">
+              <div class="medium-12 columns">
+                <button type="button" class="button off-canvas-button menu-icon" data-toggle="offCanvas"></button>
+                <a href="{{BASE_PATH}}/"><img class="logo" src="{{ ASSET_PATH }}/img/logo.png" alt="Unikernel logo"></a>
+                <!--<ul class="menu float-right main-menu">
+                  {% assign pages_list = site.pages %}
+                  {% assign group = 'navigation' %}
+                  {% include JB/pages_list %}
+                  <li><a href="https://devel.unikernel.org/t/contribute-to-unikernel-org/69">Contribute!</a></li>
+                </ul>-->
+                <ul class="menu float-right main-menu">
+                  <li {% if "/blog/" == page.url %} class="active" {% else %} {% endif %}><a href="{{BASE_PATH}}/blog">Blog</a></li>
+                  <li {% if "/projects/" == page.url %} class="active" {% else %} {% endif %}><a href="{{BASE_PATH}}/projects">Projects</a></li>
+                  <li {% if "/resources/" == page.url %} class="active" {% else %} {% endif %}><a href="{{BASE_PATH}}/resources">Resources</a></li>
+                  <li><a href="https://devel.unikernel.org/t/contribute-to-unikernel-org/69">Contribute!</a></li>
+                </ul>
+              </div>
+            </div>
+          </header>
+          
+          <main class="main-content">
+            {{ content }}
+          </main>
+          
+          <footer class="main-footer">
+            <div class="row">
+              <div class="large-5 columns">
+                <p class="legal">&copy; Copyright All rights reserved by the author</p>
+              </div>
+              <div class="large-7 columns">
+                <ul class="menu main-menu">
+                  <li><a href="{{BASE_PATH}}/blog">Blog</a></li>
+                  <li><a href="{{BASE_PATH}}/projects">Projects</a></li>
+                  <li><a href="{{BASE_PATH}}/resources">Resources</a></li>
+                  <li><a href="https://devel.unikernel.org/t/contribute-to-unikernel-org/69">Contribute!</a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    {% include JB/analytics %}
+
+    <!-- JavaScripts
+    ================================================== --> 
+    <!-- Placed at the end of the document so the pages load faster -->   
+    <script src="{{ ASSET_PATH }}/js/vendor/jquery.min.js"></script>
+    <script src="{{ ASSET_PATH }}/js/vendor/what-input.min.js"></script>
+    <script src="{{ ASSET_PATH }}/js/foundation.min.js"></script>
+    <script src="{{ ASSET_PATH }}/js/equal-heights.js"></script>
+    <script src="{{ ASSET_PATH }}/js/app.js"></script>
+  </body>
+</html>
