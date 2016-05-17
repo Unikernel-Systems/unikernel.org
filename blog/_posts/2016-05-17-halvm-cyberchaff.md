@@ -36,14 +36,14 @@ to have more privileges, or are running critical services.
 
 To impair this step of the attack, CyberChaff introduces hundreds (or
 thousands) of false, lightweight nodes on the network. These hosts are
-indistinguishable from real hosts, when scanned by the attacker, and are each
-implemented as their own HaLVM unikernel.  See the diagram below, where green
+indistinguishable from real hosts when scanned by the attacker, and are each
+implemented as their own HaLVM unikernel.  See the diagram below where green
 nodes are the real hosts and the orange nodes are HaLVM CyberChaff nodes. This
 means that an attacker is faced with a huge surface area of potential decoys,
 which mask the real hosts. If they scan one of the decoys, an alarm goes off.
 If they try to interact with one of the decoys, via HTTP or some other
 protocol, an alarm goes off. IT staff are notified of the intrusion, and can
-counterattack as they wish. Further, since each CyberChaff node is a
+react as they wish. Further, since each CyberChaff node is a
 unikernel, and their only purpose is to look like a real system, there is
 nothing to actually gain access to! Even if the attacker manages to find a
 flaw in the CyberChaff software, all they will have gained access to is a
@@ -67,7 +67,7 @@ configuration information at all layers of the network stack: custom
 functionality that allows it to appear as different operating systems to low
 level scans, custom protocol handlers to mimic the services available on the
 network, and even higher-level protocol implementations to capture information
-about the attacker. For example, CyberChaff could easily be configured to expose
+about the attacker. For example, CyberChaff can be configured to expose
 an Apple-manufactured network card, running a Microsoft Operating System, with
 a particular version of Nginx running on a given port and SSH capturing the
 attacker's login credentials. Of course, such a Frankenstein system might be
@@ -79,14 +79,14 @@ quieter ways for an attacker to scan a network is to silently listen for
 certain forms of management traffic. For example, they might list to ARP
 requests and responses to figure out who is on the network. Thus, CyberChaff
 generates a small, managed amount of traffic to make sure it looks legitimate.
-Future extensions may also target the generation of more interesting traffic,
+Future extensions will target the generation of more interesting traffic,
 such as encrypted SSH or web sessions, or even unencrypted web crawling.
 
 Overall, creating and deploying a product of this kind is possible due to the
 unikernel approach. Since each node is small and single-purpose, it becomes
 much easier to deploy large numbers of them across a network.  This is in
 contrast to creating ‘honey pots’ with traditional systems, which can be
-expensive, cumbersome to maintain, and unfeasible to deploy at scale.
+expensive, are cumbersome to maintain, and unfeasible to deploy at scale.
 
 It's exciting we can now talk about unikernel products in the real world and
 this is only the beginning of what they can offer in terms of efficiency,
