@@ -53,7 +53,7 @@ Now, go [try it out][github] and contain your unikernels!
 [docker]: http://docker.com/
 [rumprun]: http://wiki.rumpkernel.org/Repo:-rumprun
 [github]: https://github.com/Unikernel-Systems/DockerConEU2015-demo
-[demopost]: http://unikernel.org/blog/2015/unikernels-meet-docker/
+[demopost]: http://unikernel.org/blog/2015/unikernels-meet-docker
 [miragekvm]: https://github.com/mato/opam-rumprun
 [yallop]: https://github.com/yallop
 [mindy]: http://somerandomidiot.com
