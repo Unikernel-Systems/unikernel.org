@@ -7,7 +7,7 @@ authors:
 author-urls: 
 - 'http://amirchaudhry.com'
 - 'https://galois.com/team/adam-wick/'
-date: 2016-05-17 00:01:00
+date: 2016-05-18 00:01:00
 tags: [halvm, products, unikernel, users]
 image: /images/cyberchaff-reed/after-cyberchaff.png
 excerpt: "Today Formaltech, a Galois subsidiary, revealed that Reed College is
@@ -23,7 +23,7 @@ prominent products is a network security tool called CyberChaff, based on open
 source HaLVM unikernels.  Today Formaltech, a Galois subsidiary, [revealed][pr]
 that Reed College is one of their happy CyberChaff users!
 
-[pr]: #
+[pr]: https://galois.com/news/cyberchaff-reed-college/
 [d4mac]: https://blog.docker.com/2016/03/docker-for-mac-windows-beta/
 
 ### Defending a Network With CyberChaff
