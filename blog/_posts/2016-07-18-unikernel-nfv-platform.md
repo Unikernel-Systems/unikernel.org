@@ -210,9 +210,9 @@ We are investigating areas which can profit from the capabilities offered by
 unikernels. We believe this could bring in a new era of telecom innovation and
 accelerate the adoption of third party value added services.
 
-<!-- *Edit: discuss this post on [devel.unikernel.org][discuss]*
+*Edit: discuss this post on [devel.unikernel.org][discuss]*
 
-[discuss]: http://devel.unikernel.org/ -->
+[discuss]: https://devel.unikernel.org/t/nfv-platforms-with-mirageos-unikernels/175
 
 *Thanks to [Amir][] and [Mort][] for their comments on earlier drafts.*
 
