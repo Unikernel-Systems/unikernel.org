@@ -12,7 +12,7 @@ tags: [unikernel, hack, dockercon, docker]
 image: /images/screencast.png
 excerpt: "Today unikernels took to the stage at DockerCon EU in Barcelona! As part of the Cool Hacks session in the closing keynote, Anil Madhavapeddy (MirageOS project lead), showed how unikernels can be treated as any other container. He first used Docker to build a unikernel microservice and then followed up by deploying a real web application with database, webserver and PHP code all running as distinct unikernel microservices built using Rump Kernels. Docker managed the unikernels just like Linux containers but <em>without</em> needing to deploy a traditional operating system!"
 shorturl:
-featured: true
+featured: false
 ---
 {% include JB/setup %}
 
