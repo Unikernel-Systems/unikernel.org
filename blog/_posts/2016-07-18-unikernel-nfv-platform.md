@@ -214,7 +214,8 @@ accelerate the adoption of third party value added services.
 
 [discuss]: https://devel.unikernel.org/t/nfv-platforms-with-mirageos-unikernels/175
 
-*Thanks to [Amir][] and [Mort][] for their comments on earlier drafts.*
+*Thanks to [Amir][], [Mort][], and [Anil][]
+for their comments on earlier drafts.*
 
 [continuum]: http://unikernel.org/blog/2015/unikernels-meet-docker
 [MirageOS]: https://mirage.io
@@ -235,3 +236,4 @@ accelerate the adoption of third party value added services.
 [#608]: https://github.com/ocaml/ocaml/pull/608
 [Amir]: https://twitter.com/amirmc
 [Mort]: http://mort.io
+[Anil]: http://anil.recoil.org
