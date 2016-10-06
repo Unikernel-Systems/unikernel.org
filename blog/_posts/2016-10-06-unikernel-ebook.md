@@ -15,17 +15,17 @@ shorturl:
 
 [![eBook Cover]({{BASE_PATH}}/images/oreilly-ebook.gif)](http://www.oreilly.com/webops-perf/free/unikernels.csp)
 
-I am pleased to announce that my FREE Unikernel eBook is now available
+I am pleased to announce that my FREE unikernel eBook is now available
 from O'Reilly.
 
-I have been giving talks about Unikernels for the past 2 years at
-conferences throughout the North America.  This eBook is my attempt to
+I have been giving talks about unikernels for the past 2 years at
+conferences throughout North America.  This eBook is my attempt to
 present most of the information from these talks in a written form.
 It is not a technical HowTo book, but rather an introduction to the
-basic concept of Unikernels and an explanation of their value.
+basic concept of unikernels and an explanation of their value.
 
 I hope this eBook will be a useful tool for introducing people to the
-whys and wherefores of Unikernels.
+whys and wherefores of unikernels.
 
 You can download your copy here:
 [http://www.oreilly.com/webops-perf/free/unikernels.csp](http://www.oreilly.com/webops-perf/free/unikernels.csp)
