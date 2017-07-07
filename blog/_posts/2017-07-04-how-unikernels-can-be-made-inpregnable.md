@@ -62,7 +62,7 @@ There are two aspects of unikernel security. One is the vector into the VM and t
  
 These interfaces pose a risk to the VMM. As shown by the [2015 VENOM attack](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3456) they can be used to break out of a VM and into the VMM. In the VENOM attack the attacker could attack the [Qemu] through the floppy interface provided by it. 
   
-IBM research has spearheaded this effort with their [Ukvm] project. Ukvm is a replacement for [Qemu] specifically built for unikernels. [Solo5] provides a framework for Unikernels to boot a VM that is backed by ukvm instead of qemu. Both [IncludeOS] and [MirageOS] are already capable of booting using the Solo5 core and efforts are underway to port [HaLVM] to Solo5/Ukvm.
+IBM research has spearheaded this effort with their [Ukvm] project. Ukvm is a replacement for [Qemu] specifically built for unikernels. [Solo5] provides a framework for Unikernels to boot a VM that is backed by ukvm instead of qemu. Both [IncludeOS] and [MirageOS] are already capable of booting using the Solo5 core and efforts are underway to port [HaLVM] to Solo5/Ukvm. The [Muen Separation Kernel] also has a Solo5 port and it'll be exiting to see if the more traditional operating systems will follow suit.
  
 Simplifying the emulated virtual machines will significantly increase VMM security.
  
@@ -100,4 +100,5 @@ As our virtual machine monitors mature we can expect unikernel security to advan
 [system call]: https://en.wikipedia.org/wiki/System_call
 [Qemu]: http://www.qemu.org
 [Per Buer]: https://twitter.com/perbu
+[Meun Separation Kernel]: http://muen.sk/
 
