@@ -7,13 +7,11 @@ author-urls:
 - 'https://twitter.com/perbu'
 date: 2017-07-04 14:30:00
 tags: [unikernel, security]
-image: /images/IncludeOS_logo.jpg
+image: /images/Broad_chain_closeup.jpg
 excerpt: 
 shorturl: 
 ---
 {% include JB/setup %}
-
-![IncludeOS]({{BASE_PATH}}/images/includeos-logo.png)
 
 *[Per Buer] is the CEO of [IncludeOS]. IncludeOS is a clean-slate unikernel written in C++ with performance and security in mind. Per Buer is the founder and previous CEO/CTO of Varnish Software.*
 
@@ -92,6 +90,8 @@ The perimeter security defence features of Unikernels are today far superior to 
  
 As our virtual machine monitors mature we can expect unikernel security to advance further. The future for unikernels is secure.
 
+<sub>[Image](https://commons.wikimedia.org/wiki/File:Broad_chain_closeup.jpg) is (c) 2006 Toni Lozano and used under a Creative Commons 2.0 Generic License</sub>
+
 
 [IncludeOS]: http://www.includeos.org/
 [MirageOS]: https://mirage.io/
@@ -102,8 +102,4 @@ As our virtual machine monitors mature we can expect unikernel security to advan
 [system call]: https://en.wikipedia.org/wiki/System_call
 [Qemu]: http://www.qemu.org
 [Per Buer]: https://twitter.com/perbu
-
-
-
-
 
