@@ -78,9 +78,7 @@ What we need is this:
 
 These can likely be invoked through the [VMCALL] instruction. This will trap and invoke the Virtual Machine Monitor. Since these interfaces are rather simplistic we can spend a moderate amount of effort securing these and making sure that they are reasonably bug free. 
  
-A key feature of a unikernel system is that it is immutable. Once it boots there is typically no need to update it. If the VM runs in ring 3 it is incapable of modifying its own page tables. A unikernel setup to run in ring 3 is, as far as I can tell, impregnable. The CPU will refuse to alter anything executable. 
- 
-This means that the hypervisor must load the unikernel and set the executable pages immutable before booting it. Now the VM is incapable of modifying itself. Basically it is unassailable - it is impossible to compromise without access to the VMM. If the application has a bug you might still be able to crash it and make it restart, but you have no way of subjugating the VM.
+A key feature of a unikernel system is that it is meant to be immutable. Once it boots there is typically no need to update it. If the VM runs in ring 3 it can be made incapable of modifying its own page tables. If the hypervisor loads the unikernel and sets the executable pages immutable before booting it the VM cannot alter itself. This dramatically reduces the aperture of the attack. As long as there no writeable and executable pages in the unikernel I'm strugling to see a way it can be subverted. If the application has a bug you might still be able to crash it and make it restart, but you have no way of subjugating the VM.
  
 The hardware is still potentially vulnerable and as such the VM might be subject to attacks like the bitbanging attack we’ve seen on various ARM platforms. However, the track record of x86-64 is very good and I wouldn’t have any problem relying on the platform for workloads with high security requirements. 
  
