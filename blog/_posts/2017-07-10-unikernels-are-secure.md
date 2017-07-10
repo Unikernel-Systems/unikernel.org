@@ -88,8 +88,9 @@ The hardware is still potentially vulnerable and as such the VM might be subject
 
 The perimeter security defence of unikernels are today far superior to traditional operating systems. The absence of system calls and shells blinds the attacker and even if the application is buggy, subverting a unikernel VM is really hard. As our virtual machine monitors mature we can expect unikernel security to advance a lot further. The future for unikernels is secure.
 
-<sub>[Image](https://commons.wikimedia.org/wiki/File:Broad_chain_closeup.jpg) is (c) 2006 Toni Lozano and used under a Creative Commons 2.0 Generic License</sub>
+*Edit: discuss this post on [devel.unikernel.org][discuss]*
 
+<sub>[Image](https://commons.wikimedia.org/wiki/File:Broad_chain_closeup.jpg) is (c) 2006 Toni Lozano and used under a Creative Commons 2.0 Generic License</sub>
 
 [IncludeOS]: http://www.includeos.org/
 [MirageOS]: https://mirage.io/
@@ -101,4 +102,4 @@ The perimeter security defence of unikernels are today far superior to tradition
 [Qemu]: http://www.qemu.org
 [Per Buer]: https://twitter.com/perbu
 [Muen Separation Kernel]: http://muen.sk/
-
+[discuss]: https://devel.unikernel.org/t/unikernels-are-secure-here-is-why/258
