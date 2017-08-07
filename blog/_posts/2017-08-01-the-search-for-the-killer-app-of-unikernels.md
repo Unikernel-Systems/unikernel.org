@@ -17,9 +17,9 @@ When a radically different technology comes along it usually takes time before w
 
 ![Steam engine]({{BASE_PATH}}/images/steam_engine.jpg)
 
-The situration with unikernels is similar. We have this new thing and to some extent we're using it to replace some genereal purpose operating system workload. But we're still very much limited by how we think about operating systems and computers.
+The situration with unikernels is similar. We have this new thing and to some extent we're using it to replace some general purpose operating system workloads. But we're still very much limited by how we think about operating systems and computers.
 
-Unikernels are radically different. Naturally the question of the killer app has come up on a number of occasions. As unikernels are quite different from the dominant operating systems of today it isn’t as easy to spot what the killer application for Unikernels will be. Here I’ll try to answer why this is hard.
+Unikernels are radically different. Naturally the question of the killer app has come up on a number of occasions. As unikernels are quite different from the dominant operating systems of today it isn’t as easy to spot what it will be. Here I’ll try to answer why it's hard to spot the killer app.
 
 ## Defining characteristics of Unikernels
 
@@ -31,7 +31,7 @@ Let us have a look at something the software industry has been struggling with f
 
 ## How can Unikernels allow one to run native code in the browser?
 
-It’s reasonably simple. Modern CPUs provide virtualization capabilities built in. These have good security records and to my knowledge an attack that shows how you can break out of the hardware isolation hasn’t be demonstrated. The closest thing we’ve seen is attacks on the hardware emulators that help facilitate these virtual machines. 
+It’s reasonably simple. Modern CPUs provide virtualization capabilities with good security built in and we can leverage this hardware to provide isolation between server-supplied code and the client it's running on.
 
 Envision the following. You have a webpage that needs to run native code. It could be some brand new of DRM or some real intensive cryptography that needs the full power your CPU can provide. The webpage downloads a unikernel image and prepares the image. The browser sets up the virtual machine, creates page tables and initializes the unikernel. The CPU doesn’t need to boot this virtual machine in Ring 0, it can run in Ring 3 of the CPU as it will never need to talk to hardware, neither virtualized or physical. 
 
