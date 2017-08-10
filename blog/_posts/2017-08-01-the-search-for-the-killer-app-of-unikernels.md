@@ -21,21 +21,21 @@ The situation with unikernels is similar. We have this new thing and to some ext
 
 Unikernels are radically different. Naturally the question of the killer app has come up on a number of occasions. As unikernels are quite different from the dominant operating systems of today it isn’t as easy to spot what it will be. Here I’ll try to answer why it's hard to spot the killer app.
 
-## Defining characteristics of unikernels
+### Defining characteristics of unikernels
 
 Let’s start with what our characteristics are. Unikernels are fast, secure and small. This makes them a good fit for a number of applications. One approach was to consider serverless architectures. Booting [MirageOS][] in a few milliseconds was the driving characteristic behind such approaches. Galois, through their [HaLVM][] unikernel, are mainly relying on Unikernels being small and frugal to pack a lot of virtual machines into a small little box in their [CyberChaff][] product. [IncludeOS][] is focused on network appliances like firewalls, load balancers and web based APIs, relying on security and performance to get adoption.
 
 But there is an overlooked characteristic of unikernels. They are flexible. Unlike Linux and Windows you can easily boot a unikernel that relies on completely different infrastructure and protocols. Porting something as obscure as [SNA][] to a unikernel is a lot simpler than porting it to Linux or Windows. Likewise, we could well envision having HTTP support in a unikernel without having an IP stack. This sounds crazy and you’re likely asking yourself why you would ever do such a thing. I’ll get back to why and how, but bear with me for now.
 
-Let us have a look at something the software industry has been struggling with for a while: running native code in browsers. We’ve always known it is a horrible idea but we’ve still spent hundred of thousands of hours making it a reality. If we only were able to build a properly secure sandbox it’d be great. Turns out making such a sandbox is really hard and this is why Java Applets, ActiveX controllers and NaCL have been abandoned (to be truthful, I’m not certain about why Google decided to discontinue NaCL; they’re a bit opaque on why).
+Let us have a look at something the software industry has been struggling with for a while: running native code in browsers. We’ve always known it is a horrible idea but we’ve still spent hundred of thousands of hours making it a reality. If only we were able to build a properly secure sandbox it’d be great. Turns out making such a sandbox is really hard and this is why Java Applets, ActiveX controllers and NaCL have been abandoned (to be truthful, I’m not certain about why Google decided to discontinue NaCL; they’re a bit opaque on why).
 
-## How can unikernels allow one to run native code in the browser?
+### How can unikernels allow one to run native code in the browser?
 
 It’s reasonably simple. Modern CPUs provide virtualization capabilities with good security built in and we can leverage this hardware to provide isolation between server-supplied code and the client it's running on.
 
 Imagine the following. You have a webpage that needs to run native code. It could be some brand new form of DRM or some real intensive cryptography that needs the full power your CPU can provide. The webpage downloads a unikernel image and prepares the image. The browser sets up the virtual machine, creates page tables and initializes the unikernel. The CPU doesn’t need to boot this virtual machine in Ring 0; it can run in Ring 3 of the CPU as it will never need to talk to hardware, neither virtualized or physical. 
 
-This VM would not have an IP stack but a small, secure and well defined interface. It can basically do two or three things to communicate with the host:
+This VM would not have an IP stack but a small, secure, and well defined interface. It can basically do two or three things to communicate with the host:
 
  * Talk HTTP to its origin server. Browsers have HTTP clients built in.
  * Manipulate the DOM the same way Javascript can do.
@@ -47,12 +47,12 @@ The browser needs to provide these three interfaces and the unikernel needs to i
 
 The browser takes a careful look at the pointer and the data it is pointing at. This code will need to be properly vetted as a buffer overflow here could potentially allow the unikernel to execute code outside its hardware prison.
 
-The response to the request is fetched by the browser and put into shared memory as well. The browser signals the unikernel through an interrupt. This is more or less how paravirtualized drivers in the current virtual machines work. Since they aren’t really talking to hardware the CPU can run unprivileged (ring 3). 
+The response to the request is fetched by the browser and put into shared memory as well. The browser signals the unikernel through an interrupt. This is more or less how paravirtualized drivers in the current virtual machines work. Since they aren’t really talking to hardware the CPU can run unprivileged (Ring 3). 
 
 Manipulating the DOM and getting DOM events into the unikernel can be made in a similar fashion. The unikernel builds a notification and calls the hypervisor which in turns delivers the message to the VMM. I’m not really a front-end guy so I’m a bit uncertain on what the exact API would look like.
 Storage, if one should decide to implement it,  can be either virtio or something even simpler. Presenting a block device to a virtual machine in a secure manner is a solved problem.
 
-## Pushing it further - securing the VM from the prying eyes of the browser 
+### Pushing it further - securing the VM from the prying eyes of the browser 
 
 One could take this a step further and leverage the support for encrypted virtual machines. Intel has been supporting this for a number of years through their [Software Guard Extensions][] and AMD just came out with something similar in their EPYC CPUs. This would allow one to ship signed and encrypted code that could potentially be completely opaque to the user. This would naturally be a bit controversial if used for something like DRM, but there could be security applications that could benefit from running securely on a potentially compromised platform.   
 
