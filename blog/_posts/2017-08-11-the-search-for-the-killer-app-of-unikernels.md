@@ -68,5 +68,5 @@ We have no plans of implementing this. While it certainly is pretty cool, there 
 [VMCALL]: https://www.tptp.cc/mirrors/siyobik.info/instruction/VMCALL.html
 [Per Buer]: https://twitter.com/perbu
 [Software Guard Extensions]: https://en.wikipedia.org/wiki/Software_Guard_Extensions
-[discuss]: https://devel.unikernel.org
+[discuss]: https://devel.unikernel.org/t/the-search-for-the-killer-app-of-unikernels/270
 
