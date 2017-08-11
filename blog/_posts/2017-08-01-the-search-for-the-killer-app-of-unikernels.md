@@ -5,7 +5,7 @@ authors:
 - Per Buer
 author-urls: 
 - 'https://twitter.com/perbu'
-date: 2017-08-04 14:30:00
+date: 2017-08-11 01:00:00
 tags: [unikernel]
 image: /images/steam_engine.jpg
 excerpt:  When a radically different technology comes along it usually takes time before we figure out how to apply it. 
@@ -58,6 +58,7 @@ One could take this a step further and leverage the support for encrypted virtua
 
 We have no plans of implementing this. While it certainly is pretty cool, there is little opportunity for basing any commercial success on such an implementation.  The point of this exercise is to show you what the possibilities are. Replacing Linux with a unikernel is one thing, but the really exciting stuff will happen when we realize that the way we view operating systems is holding us back. The whole idea of having to emulate a whole computer with BIOS, PCI bus, and a floppy drive in order to run a virtual machine is pretty silly. Once we can free ourselves from that limitation we can start finding real applications for unikernels. In the meantime they can displace a few Linux VMs.
 
+*Discuss this post on [devel.unikernel.org][discuss]*
 
 [SNA]: https://en.wikipedia.org/wiki/IBM_Systems_Network_Architecture
 [IncludeOS]: http://www.includeos.org/
@@ -67,3 +68,5 @@ We have no plans of implementing this. While it certainly is pretty cool, there 
 [VMCALL]: https://www.tptp.cc/mirrors/siyobik.info/instruction/VMCALL.html
 [Per Buer]: https://twitter.com/perbu
 [Software Guard Extensions]: https://en.wikipedia.org/wiki/Software_Guard_Extensions
+[discuss]: https://devel.unikernel.org
+
