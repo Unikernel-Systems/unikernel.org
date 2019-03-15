@@ -15,139 +15,146 @@ tagline:
 </section>
 
 <section class="page-section item-roll projects">
-  <div class="row">
-    <div class="large-10 large-offset-1 columns">
-	  
-	  
-	  <div class="item featured">
-		<div class="row">
-		  <div class="medium-9 columns">
-			<h2>An overview of approaches</h2>
-			<p class="lead">Minimal, bespoke unikernel operating systems can be constructed in many different ways for many different applications on many different hardware platforms. Some systems (like Rumprun) are language-agnostic, and provide a platform for any application code based on the requests it makes of the operating system. Others (like MirageOS and HaLVM) leverage high-level languages and a runtime to provide an API for operating system functionality. Unikernels can run in containers, on hypervisors, and on a wide array of bare-metal hardware.</p>
-			<p>The projects below represent a slice of the variety of solutions available in the unikernel space. They include C++ network-specific high-speed unikernels, purely functional and statically typed bespoke unikernels, a cloud-oriented JavaScript library operating system, and a software which runs existing unmodified POSIX software as a unikernel on bare hardware or hypervisors. Unikernels are running in research labs, in server rooms, and on low-power devices all over the world, many built on the projects here!</p>
-			<p>If your project is missing, <a href="https://github.com/Unikernel-Systems/unikernel.org/issues/new">please let us know!</a></p>
-		  </div>
-		  <div class="medium-3 columns img-col">
-			<img src="{{BASE_PATH}}/images/noun_153314_cc.png">
-			<p class="image-credit">Image credit: Denis Klyuchnikov from Noun Project</p>
-		  </div>
-		</div>
-	  </div>
-	  
-	  
-	  <div class="row eqH-md">
-		<div class="medium-6 columns">
-		  <article class="item">
-			<h3>ClickOS</h3>
-			<p>A high-performance, virtualized software middle box platform based on open source virtualization. Early performance analysis shows that ClickOS VMs are small (5MB), boot quickly (as little as 20 milliseconds), add little delay (45 microseconds) and more than 100 can be concurrently run while saturating a 10Gb pipe on an inexpensive commodity server.</p>
-			<p><a target="_blank" href="http://cnp.neclab.eu/projects/clickos/">cnp.neclab.eu</a></p>
-		  </article>
-		</div>
-		
-		<div class="medium-6 columns">
-		  <article class="item">
-			<h3>Clive</h3>
-			<p>An operating system designed to work in distributed and cloud computing environments, written in the Go programming language.</p>
-			<p><a target="_blank" href="http://lsub.org/ls/clive.html">lsub.org</a></p>
-		  </article>
-		</div>
-	  </div>
-	  
-	  <div class="row eqH-md">
-		<div class="medium-6 columns">
-		  <article class="item">
-			<h3>Drawbridge</h3>
-			<p>A research prototype of a new form of virtualization for application sandboxing. Drawbridge combines two core technologies: a picoprocess, which is a process-based isolation container with a minimal kernel API surface, and a library OS, which is a version of Windows enlightened to run efficiently within a picoprocess.</p>
-			<p><a target="_blank" href="http://research.microsoft.com/en-us/projects/drawbridge/">research.microsoft.com</a></p>
-		  </article>
-		</div>
-		
-		<div class="medium-6 columns">
-		  <article class="item">
-			<h3>HaLVM</h3>
-			<p>A port of the Glasgow Haskell Compiler tool suite that enables developers to write high-level, lightweight VMs that can run directly on the Xen hypervisor.</p>
-			<p><a target="_blank" href="http://galois.com/project/halvm/">galois.com</a></p>
-		  </article>
-		</div>
-	  </div>
-	  
-	  <div class="row eqH-md">
-		<div class="medium-6 columns">
-		  <article class="item">
-			<h3>IncludeOS</h3>
-			<p>A minimal, service oriented, includeable library operating system for cloud services. Currently a research project for running C++ code on virtual hardware.</p>
-			<p><a target="_blank" href="http://www.includeos.org">includeos.org</a></p>
-		  </article>
-		</div>
-		
-		<div class="medium-6 columns">
-		  <article class="item">
-			<h3>LING</h3>
-			<p>A unikernel based on the Erlang/OTP and understands .beam files. Developers can create code in Erlang and deploy it as LING unikernels. LING removes the majority of vector files, uses only three external libraries and no OpenSSL.</p>
-			<p><a target="_blank" href="http://erlangonxen.org">erlangonxen.org</a></p>
-		  </article>
-		</div>
-	  </div>
-	  
-	  <div class="row eqH-md">
-		<div class="medium-6 columns">
-		  <article class="item">
-			<h3>MirageOS</h3>
-			<p>A clean-slate library operating system that constructs unikernels for secure, high-performance network applications across a variety of cloud computing and mobile platforms. There are now almost <a href="https://github.com/mirage/mirage-www/blob/master/TROVE">100 MirageOS libraries</a> and a growing number of compatible libraries within the wider OCaml ecosystem.</p>
-			<p><a target="_blank" href="https://mirage.io">mirage.io</a></p>
-		  </article>
-		</div>
-		
-		<div class="medium-6 columns">
-		  <article class="item">
-			<h3>OSv</h3>
-			<p>A new OS designed specifically for cloud VMs from Cloudius Systems. Able to boot in less than a second, OSv is designed from the ground up to execute a single application on top of any hypervisor, resulting in superior performance, speed and effortless management. Support for C, JVM, Ruby and Node.js application stacks is available.</p>
-			<p><a target="_blank" href="http://osv.io">osv.io</a></p>
-		  </article>
-		</div>
-	  </div>
-	  
-	  <div class="row eqH-md">
-		<div class="medium-6 columns">
-		  <article class="item">
-			<h3>Rumprun</h3>
-			<p>A software stack which enables running existing unmodified POSIX software as a unikernel. Rumprun supports multiple platforms, including bare hardware and hypervisors such as Xen and KVM. It is based on rump kernels which provide free, portable, componentized, kernel quality drivers such as file systems, POSIX system call handlers, PCI device drivers, a SCSI protocol stack, virtio and a TCP/IP stack.</p>
-			<p><a target="_blank" href="http://rumpkernel.org">rumpkernel.org</a></p>
-		  </article>
-		</div>
-		
-		<div class="medium-6 columns">
-		  <article class="item">
-			<h3>runtime.js</h3>
-			<p>An open-source library operating system for the cloud that runs JavaScript, could be bundled up with an application and deployed as a lightweight and immutable VM image. It's built on V8 JavaScript engine and uses event-driven and non-blocking I/O model inspired by Node.js. At the moment KVM is the only supported hypervisor.</p>
-			<p><a target="_blank" href="http://runtimejs.org">runtimejs.org</a></p>
-		  </article>
-		</div>
-	  </div>
-	  <div class="row eqH-md">
-      		<div class="medium-6 columns">
-      			<article class="item">
-      			<h3>UniK</h3>
-      			<p>UniK (pronounced you-neek) is a tool for simplifying compilation and orchestration of unikernels. Similar to the way Docker builds and orchestrates containers, UniK automates compilation of popular languages (C/C++, Golang, Java, Node.js. Python) into unikernels. UniK deploys unikernels as virtual machines on OpenStack, VirtualBox, QEMU, AWS, vSphere, ukvm, and Xen. UniK incorporates work from the <a target="_blank" href="http://rumpkernel.org">Rumprun</a>, <a target="_blank" href="http://osv.io">OSv</a>, <a target="_blank" href="http://www.includeos.org">IncludeOS</a>, and <a target="_blank" href="https://mirage.io">MirageOS</a> projects.</p>
-      			<p><a target="_blank" href="https://github.com/emc-advanced-dev/unik">UniK Repository</a></p>
-      		  </article>
-      		</div>
+	<div class="row">
+		<div class="large-10 large-offset-1 columns">
 
-		<div class="medium-6 columns">
-		</div>
-	  </div>
-	  <div class="row eqH-md">
-      		<div class="medium-6 columns">
-      			<article class="item">
-      			<h3>HermitCore</h3>
-      			<p class="post-excerpt">HermitCore is a novel <a href="http://unikernel.org">unikernel</a> operating system targeting a scalable and predictable runtime behavior for HPC and cloud environments. The current version supports C/C++, Fortran, Go, Pthreads, OpenMP and <a href="http://www.lfbs.rwth-aachen.de/publications/files/iRCCE.pdf">iRCCE</a> as message passing library. The potential of HermitCore is illustrated by a small number of <a href="search/index.html#video">videos</a>.</p>
-      			<p><a target="_blank" href="https://github.com/hermitcore/libhermit">HermitCore Repository</a></p>
-      		  </article>
-      		</div>
 
-		<div class="medium-6 columns">
-		</div>
-	  </div>
-	</div>
-  </div>
+			<div class="item featured">
+				<div class="row">
+					<div class="medium-9 columns">
+						<h2>An overview of approaches</h2>
+						<p class="lead">Minimal, bespoke unikernel operating systems can be constructed in many different ways for many different applications on many different hardware platforms. Some systems (like Rumprun) are language-agnostic, and provide a platform for any application code based on the requests it makes of the operating system. Others (like MirageOS and HaLVM) leverage high-level languages and a runtime to provide an API for operating system functionality. Unikernels can run in containers, on hypervisors, and on a wide array of bare-metal hardware.</p>
+						<p>The projects below represent a slice of the variety of solutions available in the unikernel space. They include C++ network-specific high-speed unikernels, purely functional and statically typed bespoke unikernels, a cloud-oriented JavaScript library operating system, and a software which runs existing unmodified POSIX software as a unikernel on bare hardware or hypervisors. Unikernels are running in research labs, in server rooms, and on low-power devices all over the world, many built on the projects here!</p>
+						<p>If your project is missing, <a href="https://github.com/Unikernel-Systems/unikernel.org/issues/new">please let us know!</a></p>
+					</div>
+					<div class="medium-3 columns img-col">
+						<img src="http://unikernel.org/images/noun_153314_cc.png">
+						<p class="image-credit">Image credit: Denis Klyuchnikov from Noun Project</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row eqH-md heights-equalized">
+				<div class="medium-6 columns" style="height: 477px;">
+					<article class="item">
+						<h3>ClickOS</h3>
+						<p>A high-performance, virtualized software middle box platform based on open source virtualization. Early performance analysis shows that ClickOS VMs are small (5MB), boot quickly (as little as 20 milliseconds), add little delay (45 microseconds) and more than 100 can be concurrently run while saturating a 10Gb pipe on an inexpensive commodity server.</p>
+						<p><a target="_blank" href="http://cnp.neclab.eu/projects/clickos/">cnp.neclab.eu</a></p>
+					</article>
+				</div>
+
+				<div class="medium-6 columns" style="height: 477px;">
+					<article class="item">
+						<h3>Clive</h3>
+						<p>An operating system designed to work in distributed and cloud computing environments, written in the Go programming language.</p>
+						<p><a target="_blank" href="http://lsub.org/ls/clive.html">lsub.org</a></p>
+					</article>
+				</div>
+			</div>
+
+			<div class="row eqH-md heights-equalized">
+				<div class="medium-6 columns" style="height: 447px;">
+					<article class="item">
+						<h3>Drawbridge</h3>
+						<p>A research prototype of a new form of virtualization for application sandboxing. Drawbridge combines two core technologies: a picoprocess, which is a process-based isolation container with a minimal kernel API surface, and a library OS, which is a version of Windows enlightened to run efficiently within a picoprocess.</p>
+						<p><a target="_blank" href="http://research.microsoft.com/en-us/projects/drawbridge/">research.microsoft.com</a></p>
+					</article>
+				</div>
+
+				<div class="medium-6 columns" style="height: 447px;">
+					<article class="item">
+						<h3>HaLVM</h3>
+						<p>A port of the Glasgow Haskell Compiler tool suite that enables developers to write high-level, lightweight VMs that can run directly on the Xen hypervisor.</p>
+						<p><a target="_blank" href="http://galois.com/project/halvm/">galois.com</a></p>
+					</article>
+				</div>
+
+            </div>
+
+            <div class="row eqH-md heights-equalized">
+                <div class="medium-6 columns" style="height: 447px;">
+                    <article class="item">
+                        <h3>HermitCore</h3>
+                        <p class="post-excerpt">HermitCore is a novel <a href="http://unikernel.org">unikernel</a> operating system targeting a scalable and predictable runtime behavior for HPC and cloud environments. The current version supports C/C++, Fortran, Go, Pthreads, OpenMP and <a href="http://www.lfbs.rwth-aachen.de/publications/files/iRCCE.pdf">iRCCE</a> as message passing library. The potential of HermitCore is illustrated by a small number of <a href="search/index.html#video">videos</a>.</p>
+                        <p><a target="_blank" href="https://github.com/hermitcore/libhermit">HermitCore Repository</a></p>
+                    </article>
+                </div><div class="medium-6 columns" style="height: 387px;">
+                    <article class="item">
+                        <h3>IncludeOS</h3>
+                        <p>A minimal, service oriented, includeable library operating system for cloud services. Currently a research project for running C++ code on virtual hardware.</p>
+                        <p><a target="_blank" href="http://www.includeos.org">includeos.org</a></p>
+                    </article>
+                </div>
+
+
+            </div>
+
+            <div class="row eqH-md heights-equalized">
+                <div class="medium-6 columns" style="height: 387px;">
+                    <article class="item">
+                        <h3>LING</h3>
+                        <p>A unikernel based on the Erlang/OTP and understands .beam files. Developers can create code in Erlang and deploy it as LING unikernels. LING removes the majority of vector files, uses only three external libraries and no OpenSSL.</p>
+                        <p><a target="_blank" href="http://erlangonxen.org">erlangonxen.org</a></p>
+                    </article>
+                </div>
+                <div class="medium-6 columns" style="height: 477px;">
+                    <article class="item">
+                        <h3>MirageOS</h3>
+                        <p>A clean-slate library operating system that constructs unikernels for secure, high-performance network applications across a variety of cloud computing and mobile platforms. There are now almost <a href="https://github.com/mirage/mirage-www/blob/master/TROVE">100 MirageOS libraries</a> and a growing number of compatible libraries within the wider OCaml ecosystem.</p>
+                        <p><a target="_blank" href="https://mirage.io">mirage.io</a></p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="row eqH-md heights-equalized">
+                <div class="medium-6 columns">    
+                    <article class="item">    
+                        <h3>Nautilus</h3>                                                                                                                                                                              <p class="post-excerpt">Nautilus is a <a href="http://unikernel.org">unikernel</a> OS framework designed to be paired with a high-performance, parallel runtime system (such as <a href="https://legion.stanford.edu/">Legion</a>, <a href="http://charm.cs.illinois.edu/research/charm">Charm++</a>, or <a href="http://stellar-group.org/libraries/hpx/">HPX</a>) to produce a <a href="http://users.eecs.northwestern.edu/~kch479/docs/nautilus.pdf">Hybrid Runtime (HRT)</a> in order to boost application performance and reduce replicated functionality in the OS and runtime system. The current version has experimental support for Rust and OpenMP.</p>    
+                        <p><a target="_blank" href="https://github.com/hexsa-lab/nautilus">Nautilus Repository</a></p>    
+                    </article>    
+                </div>
+
+                <div class="medium-6 columns" style="height: 477px;">
+                    <article class="item">
+                        <h3>OSv</h3>
+                        <p>A new OS designed specifically for cloud VMs from Cloudius Systems. Able to boot in less than a second, OSv is designed from the ground up to execute a single application on top of any hypervisor, resulting in superior performance, speed and effortless management. Support for C, JVM, Ruby and Node.js application stacks is available.</p>
+                        <p><a target="_blank" href="http://osv.io">osv.io</a></p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="row eqH-md heights-equalized">
+                <div class="medium-6 columns" style="height: 537px;">
+                    <article class="item">
+                        <h3>Rumprun</h3>
+                        <p>A software stack which enables running existing unmodified POSIX software as a unikernel. Rumprun supports multiple platforms, including bare hardware and hypervisors such as Xen and KVM. It is based on rump kernels which provide free, portable, componentized, kernel quality drivers such as file systems, POSIX system call handlers, PCI device drivers, a SCSI protocol stack, virtio and a TCP/IP stack.</p>
+                        <p><a target="_blank" href="http://rumpkernel.org">rumpkernel.org</a></p>
+                    </article>
+                </div>
+
+                <div class="medium-6 columns" style="height: 537px;">
+                    <article class="item">
+                        <h3>runtime.js</h3>
+                        <p>An open-source library operating system for the cloud that runs JavaScript, could be bundled up with an application and deployed as a lightweight and immutable VM image. It's built on V8 JavaScript engine and uses event-driven and non-blocking I/O model inspired by Node.js. At the moment KVM is the only supported hypervisor.</p>
+                        <p><a target="_blank" href="http://runtimejs.org">runtimejs.org</a></p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="row eqH-md heights-equalized">
+                <div class="medium-6 columns" style="height: 597px;">
+                    <article class="item">
+                        <h3>UniK</h3>
+                        <p>UniK (pronounced you-neek) is a tool for simplifying compilation and orchestration of unikernels. Similar to the way Docker builds and orchestrates containers, UniK automates compilation of popular languages (C/C++, Golang, Java, Node.js. Python) into unikernels. UniK deploys unikernels as virtual machines on OpenStack, VirtualBox, QEMU, AWS, vSphere, ukvm, and Xen. UniK incorporates work from the <a target="_blank" href="http://rumpkernel.org">Rumprun</a>, <a target="_blank" href="http://osv.io">OSv</a>, <a target="_blank" href="http://www.includeos.org">IncludeOS</a>, and <a target="_blank" href="https://mirage.io">MirageOS</a> projects.</p>
+                        <p><a target="_blank" href="https://github.com/emc-advanced-dev/unik">UniK Repository</a></p>
+                    </article>
+                </div>
+
+                <div class="medium-6 columns" style="height: 597px;">
+                </div>
+            </div>
+
+        </div>
+    </div>
 </section>
